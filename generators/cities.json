@@ -1,0 +1,424 @@
+{
+    "RetailCities": [
+        {
+            "routCode": "ABT",
+            "rCity": "Aqiq"
+        },
+        {
+            "routCode": "ABT",
+            "rCity": "Baha"
+        },
+        {
+            "routCode": "ABT",
+            "rCity": "Biljurashi"
+        },
+        {
+            "routCode": "ABT",
+            "rCity": "Mandaq"
+        },
+        {
+            "routCode": "ABT",
+            "rCity": "Mukhwah"
+        },
+        {
+            "routCode": "ABT",
+            "rCity": "Namerah"
+        },
+        {
+            "routCode": "ABT",
+            "rCity": "Qilwah"
+        },
+        {
+            "routCode": "ABT",
+            "rCity": "Qunfudhah"
+        },
+        {
+            "routCode": "AJF",
+            "rCity": "Dawmat Al Jandal"
+        },
+        {
+            "routCode": "AJF",
+            "rCity": "Skakah"
+        },
+        {
+            "routCode": "ANS",
+            "rCity": "Namas"
+        },
+        {
+            "routCode": "ANS",
+            "rCity": "Sabt Al Alaya"
+        },
+        {
+            "routCode": "ANS",
+            "rCity": "Tanumah"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Anak"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Buqaiq"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Dammam"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Jubail"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Khafji"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Khobar"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Nairiyah"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Qarya Ulya "
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Qatif"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Ras Tannurah"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Safwa"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Sayhat"
+        },
+        {
+            "routCode": "EAM",
+            "rCity": "Habona"
+        },
+        {
+            "routCode": "EAM",
+            "rCity": "Najran"
+        },
+        {
+            "routCode": "EAM",
+            "rCity": "Sharourah"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Badaya"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Bikeryah"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Buraydah"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Midhnab"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Rafaya AlGimsh"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Rass"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Riyadh Al Khabra"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Sajir"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Unayzah"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Uyun Al Jiwa"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Abu Arish"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Ahad Al Masarhah"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Alardhah"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "At Tuwal"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Baysh"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Darb"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Dayer"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Gizan"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Sabya"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Samtah"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Wadi Hali"
+        },
+        {
+            "routCode": "HAS",
+            "rCity": "Hail"
+        },
+        {
+            "routCode": "HBT",
+            "rCity": "Hafar Al Baten"
+        },
+        {
+            "routCode": "HBT",
+            "rCity": "Rafha"
+        },
+        {
+            "routCode": "HOF",
+            "rCity": "Hufuf"
+        },
+        {
+            "routCode": "JED",
+            "rCity": "Jeddah"
+        },
+        {
+            "routCode": "JED",
+            "rCity": "Khulais"
+        },
+        {
+            "routCode": "JED",
+            "rCity": "Lith"
+        },
+        {
+            "routCode": "JED",
+            "rCity": "Rabigh"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Abha"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Ahad Rafidah"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Bishah"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Dhahran Aljanoub"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Khamis Mushayt"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Majardah"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Muhayil"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Rijal Alma"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Sarat Abida"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Tareeb"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Tathleeth"
+        },
+        {
+            "routCode": "MAK",
+            "rCity": "Jamoum"
+        },
+        {
+            "routCode": "MAK",
+            "rCity": "Makkah"
+        },
+        {
+            "routCode": "MED",
+            "rCity": "Hanakiyah"
+        },
+        {
+            "routCode": "MED",
+            "rCity": "Khayber"
+        },
+        {
+            "routCode": "MED",
+            "rCity": "Madinah"
+        },
+        {
+            "routCode": "MED",
+            "rCity": "Mahd Al Dahab"
+        },
+        {
+            "routCode": "MED",
+            "rCity": "Ula"
+        },
+        {
+            "routCode": "MJM",
+            "rCity": "Afif"
+        },
+        {
+            "routCode": "MJM",
+            "rCity": "Duwadimi"
+        },
+        {
+            "routCode": "MJM",
+            "rCity": "Majmaah"
+        },
+        {
+            "routCode": "MJM",
+            "rCity": "Shaqra"
+        },
+        {
+            "routCode": "MJM",
+            "rCity": "Zulfi"
+        },
+        {
+            "routCode": "RAE",
+            "rCity": "Arar"
+        },
+        {
+            "routCode": "RUH",
+            "rCity": "Aflaj"
+        },
+        {
+            "routCode": "RUH",
+            "rCity": "Hawtat Bani Tamim"
+        },
+        {
+            "routCode": "RUH",
+            "rCity": "Kharj"
+        },
+        {
+            "routCode": "RUH",
+            "rCity": "Muzamiyah"
+        },
+        {
+            "routCode": "RUH",
+            "rCity": "Quwayiyah"
+        },
+        {
+            "routCode": "RUH",
+            "rCity": "Remah"
+        },
+        {
+            "routCode": "RUH",
+            "rCity": "Riyadh"
+        },
+        {
+            "routCode": "TIF",
+            "rCity": "Khurmah"
+        },
+        {
+            "routCode": "TIF",
+            "rCity": "Ranyah"
+        },
+        {
+            "routCode": "TIF",
+            "rCity": "Taif"
+        },
+        {
+            "routCode": "TIF",
+            "rCity": "Turbah"
+        },
+        {
+            "routCode": "TUU",
+            "rCity": "Dhuba"
+        },
+        {
+            "routCode": "TUU",
+            "rCity": "Haql"
+        },
+        {
+            "routCode": "TUU",
+            "rCity": "Tabuk"
+        },
+        {
+            "routCode": "TUU",
+            "rCity": "Taima"
+        },
+        {
+            "routCode": "URY",
+            "rCity": "Qurayyat"
+        },
+        {
+            "routCode": "URY",
+            "rCity": "Tabarjal"
+        },
+        {
+            "routCode": "URY",
+            "rCity": "Turayf"
+        },
+        {
+            "routCode": "WAE",
+            "rCity": "Sulayyil"
+        },
+        {
+            "routCode": "WAE",
+            "rCity": "Wadi Al Dawasir"
+        },
+        {
+            "routCode": "YNB",
+            "rCity": "Badr"
+        },
+        {
+            "routCode": "YNB",
+            "rCity": "Umlej"
+        },
+        {
+            "routCode": "YNB",
+            "rCity": "Wajh"
+        },
+        {
+            "routCode": "YNB",
+            "rCity": "Yanbu"
+        }
+    ]
+}

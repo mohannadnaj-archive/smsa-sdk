@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "generate-all": "php generators/generate-cities.php && php generators/generate-from-wsdl.php && php generators/generate-response-methods.php"
+  }
+}

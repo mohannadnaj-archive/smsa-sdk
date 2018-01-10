@@ -1,0 +1,12 @@
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+*.php_cs.cache
+composer.lock
+/notes.md
+*.sqlite
+tests/_reports
