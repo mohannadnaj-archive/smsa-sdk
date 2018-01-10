@@ -24,7 +24,7 @@ class Config
      *
      * @return
      */
-    public static function get(string $name)
+    public static function get($name)
     {
         return static::$config[$name];
     }
@@ -38,7 +38,7 @@ class Config
      *
      * @return $this
      */
-    public static function set(string $name, $value)
+    public static function set($name, $value)
     {
         static::$config[$name] = $value;
 
