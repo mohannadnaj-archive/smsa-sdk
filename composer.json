@@ -3,7 +3,7 @@
     "description": "SMSA Integration",
     "type": "library",
     "require-dev": {
-        "phpunit/phpunit": "^6.4",
+        "phpunit/phpunit": "^5.6",
         "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
     },
     "license": "MIT",
