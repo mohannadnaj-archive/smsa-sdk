@@ -2,6 +2,9 @@
 
 Simple PHP package for integrating SMSA Web Services (SECOM).
 
+[![Total Downloads](https://poser.pugx.org/mohannadnaj/smsa-sdk/downloads)](https://packagist.org/packages/mohannadnaj/smsa-sdk)
+[![Build Status](https://travis-ci.org/MohannadNaj/smsa-sdk.svg?branch=master)](https://travis-ci.org/MohannadNaj/smsa-sdk)
+
 ## Installation
 Include the package via [composer](https://getcomposer.org/) :
 ``` shell
