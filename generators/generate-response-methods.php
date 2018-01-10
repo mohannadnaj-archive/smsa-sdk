@@ -5,7 +5,7 @@ require __DIR__.'/../vendor/autoload.php';
 use SmsaSDK\Config;
 
 $methodsAndResponses = get_methods_and_responses();
-$trait  = <<<EOD
+$trait = <<<'EOD'
 <?php
 namespace SmsaSDK;
 
@@ -13,45 +13,44 @@ trait MethodsRedirector {
 EOD;
 
 foreach ($methodsAndResponses as $method => $response) {
-    $trait .= "\n\r" . build_method($method, $response);
+    $trait .= "\n\r".build_method($method, $response);
 }
 
 $trait .= "\n\r}";
 
-file_put_contents(__DIR__ . '/../src/MethodsRedirector.php', $trait);
+file_put_contents(__DIR__.'/../src/MethodsRedirector.php', $trait);
 
 function build_method($method, $response)
 {
     $docBlock = "/**\n\r";
     $rawMethod = "public static function $method(";
-    
+
     $innerMethodTemplate = file_get_contents(__DIR__.'/stubs/MethodsRedirectorInnerMethod.php');
     $innerMethodTemplate = str_replace('%method', $method, $innerMethodTemplate);
 
-    $innerMethod = "";
+    $innerMethod = '';
 
-    $reflection = new ReflectionClass('SmsaSDK\\Methods\\'. $method);
+    $reflection = new ReflectionClass('SmsaSDK\\Methods\\'.$method);
     $params = $reflection->getConstructor()->getParameters();
 
     foreach ($params as $param) {
-        $docBlock .= "* @param $" . $param->name . "\n\r";
-        $rawMethod .= "$" . $param->name . " = null, " ;
+        $docBlock .= '* @param $'.$param->name."\n\r";
+        $rawMethod .= '$'.$param->name.' = null, ';
         $innerMethod .= "if(!is_null(\$$param->name)) { \$arguments['$param->name'] = \$$param->name; } \n\r";
     }
     $docBlock .= "* @return \SmsaSDK\Methods\\$response\n\r";
-    $docBlock .= "*/";
-    
+    $docBlock .= '*/';
+
     $innerMethodTemplate = str_replace('%innerMethod', $innerMethod, $innerMethodTemplate);
 
     $rawMethod = substr($rawMethod, 0, -2); // remove the last comma and space ", "
 
     $rawMethod .= ") { $innerMethodTemplate }";
 
-    return $docBlock . "\n\r" . $rawMethod;
+    return $docBlock."\n\r".$rawMethod;
 }
-function get_methods_and_responses() 
+function get_methods_and_responses()
 {
-
     $wsdlFile = file_get_contents(Config::get('wsdl_file_path'));
 
     $responseRegex = '/"([^"]+)Response"/';
@@ -59,8 +58,8 @@ function get_methods_and_responses()
     preg_match_all($responseRegex, $wsdlFile, $responseMethods);
 
     $responseMethods = array_filter(
-        $responseMethods[1], function ($method) { 
-            return substr($method, 0, 4) != "tns:";
+        $responseMethods[1], function ($method) {
+            return substr($method, 0, 4) != 'tns:';
         }
     );
 
@@ -71,8 +70,8 @@ function get_methods_and_responses()
     $responseMethodsCopy = [];
 
     array_walk(
-        $responseMethods, function ($method) use (& $responseMethodsCopy) {
-            $responseMethodsCopy[$method] = $method . "Response";
+        $responseMethods, function ($method) use (&$responseMethodsCopy) {
+            $responseMethodsCopy[$method] = $method.'Response';
         }
     );
 

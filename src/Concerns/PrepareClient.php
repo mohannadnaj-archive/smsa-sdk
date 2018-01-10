@@ -2,7 +2,6 @@
 
 namespace SmsaSDK\Concerns;
 
-use SmsaSDK\Exceptions\InvalidArgument;
 use SmsaSDK\Methods\SMSAWebService;
 
 trait PrepareClient
@@ -10,23 +9,24 @@ trait PrepareClient
     /**
      * @return \SmsaSDK\Methods\SMSAWebService
      */
-    private function client() 
+    private function client()
     {
-        if(empty($this->client)) {
+        if (empty($this->client)) {
             $this->setClient(new SMSAWebService([], $this->getWsdlFilePath()));
         }
+
         return $this->client;
     }
 
     /**
      * setClient
-     * Insert description here
+     * Insert description here.
      *
      * @param $client
      *
      * @return
      */
-    private function setClient($client) 
+    private function setClient($client)
     {
         $this->client = $client;
     }

@@ -4,7 +4,7 @@ namespace SmsaSDK;
 
 /**
  * SoapClient
- * Insert description here
+ * Insert description here.
  */
 class SoapClient extends \SoapClient
 {
@@ -15,7 +15,7 @@ class SoapClient extends \SoapClient
 
     /**
      * __soapCall
-     * Insert description here
+     * Insert description here.
      *
      * @param $function_name
      * @param $arguments
@@ -25,12 +25,12 @@ class SoapClient extends \SoapClient
      *
      * @return
      */
-    public function __soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null) 
+    public function __soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null)
     {
         static::$lastCall = compact('function_name', 'arguments', 'options', 'input_headers', 'output_headers');
 
         // if the alternative client was set, for testing or customization for example
-        if(static::$client ) {
+        if (static::$client) {
             return static::$client->$function_name($arguments);
         }
 
@@ -39,7 +39,7 @@ class SoapClient extends \SoapClient
 
     /**
      * soapCall
-     * Insert description here
+     * Insert description here.
      *
      * @param $function_name
      * @param $arguments
@@ -49,13 +49,13 @@ class SoapClient extends \SoapClient
      *
      * @return
      */
-    private function soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null) 
+    private function soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null)
     {
         try {
             return parent::__soapCall($function_name, $arguments, $options, $input_headers, $output_headers);
         } catch (\Exception $e) {
             static::$lastException = $e;
-            if(! static::$testing) {
+            if (!static::$testing) {
                 throw $e;
             }
         }
@@ -63,13 +63,13 @@ class SoapClient extends \SoapClient
 
     /**
      * setTestingClient
-     * Insert description here
+     * Insert description here.
      *
      * @param $client
      *
      * @return
      */
-    public static function setTestingClient($client = null) 
+    public static function setTestingClient($client = null)
     {
         static::$testing = true;
         static::$client = $client;
@@ -77,22 +77,22 @@ class SoapClient extends \SoapClient
 
     /**
      * getTestingClient
-     * Insert description here
+     * Insert description here.
      *
      * @return
      */
-    public static function getTestingClient() 
+    public static function getTestingClient()
     {
         return static::$client;
     }
 
     /**
      * turnOffTestingClient
-     * Insert description here
+     * Insert description here.
      *
      * @return
      */
-    public static function turnOffTestingClient() 
+    public static function turnOffTestingClient()
     {
         static::$testing = false;
         static::$client = null;

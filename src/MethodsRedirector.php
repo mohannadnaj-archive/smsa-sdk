@@ -1,46 +1,47 @@
 <?php
+
 namespace SmsaSDK;
 
 trait MethodsRedirector
 {
     /**
-* @param $passKey
-* @param $refNo
-* @param $sentDate
-* @param $idNo
-* @param $cName
-* @param $cntry
-* @param $cCity
-* @param $cZip
-* @param $cPOBox
-* @param $cMobile
-* @param $cTel1
-* @param $cTel2
-* @param $cAddr1
-* @param $cAddr2
-* @param $shipType
-* @param $PCs
-* @param $cEmail
-* @param $carrValue
-* @param $carrCurr
-* @param $codAmt
-* @param $weight
-* @param $custVal
-* @param $custCurr
-* @param $insrAmt
-* @param $insrCurr
-* @param $itemDesc
-* @param $sName
-* @param $sContact
-* @param $sAddr1
-* @param $sAddr2
-* @param $sCity
-* @param $sPhone
-* @param $sCntry
-* @param $prefDelvDate
-* @param $gpsPoints
-* @return \SmsaSDK\Methods\addShipResponse
-
+     * @param $passKey
+     * @param $refNo
+     * @param $sentDate
+     * @param $idNo
+     * @param $cName
+     * @param $cntry
+     * @param $cCity
+     * @param $cZip
+     * @param $cPOBox
+     * @param $cMobile
+     * @param $cTel1
+     * @param $cTel2
+     * @param $cAddr1
+     * @param $cAddr2
+     * @param $shipType
+     * @param $PCs
+     * @param $cEmail
+     * @param $carrValue
+     * @param $carrCurr
+     * @param $codAmt
+     * @param $weight
+     * @param $custVal
+     * @param $custCurr
+     * @param $insrAmt
+     * @param $insrCurr
+     * @param $itemDesc
+     * @param $sName
+     * @param $sContact
+     * @param $sAddr1
+     * @param $sAddr2
+     * @param $sCity
+     * @param $sPhone
+     * @param $sCntry
+     * @param $prefDelvDate
+     * @param $gpsPoints
+     *
+     * @return \SmsaSDK\Methods\addShipResponse
      */
     public static function addShip($passKey = null, $refNo = null, $sentDate = null, $idNo = null, $cName = null, $cntry = null, $cCity = null, $cZip = null, $cPOBox = null, $cMobile = null, $cTel1 = null, $cTel2 = null, $cAddr1 = null, $cAddr2 = null, $shipType = null, $PCs = null, $cEmail = null, $carrValue = null, $carrCurr = null, $codAmt = null, $weight = null, $custVal = null, $custCurr = null, $insrAmt = null, $insrCurr = null, $itemDesc = null, $sName = null, $sContact = null, $sAddr1 = null, $sAddr2 = null, $sCity = null, $sPhone = null, $sCntry = null, $prefDelvDate = null, $gpsPoints = null)
     {
@@ -157,47 +158,47 @@ trait MethodsRedirector
             $arguments['gpsPoints'] = $gpsPoints;
         }
 
-
         return static::handleStaticCalls('addShip', [$arguments]);
     }
-    /**
-* @param $passKey
-* @param $refNo
-* @param $sentDate
-* @param $idNo
-* @param $cName
-* @param $cntry
-* @param $cCity
-* @param $cZip
-* @param $cPOBox
-* @param $cMobile
-* @param $cTel1
-* @param $cTel2
-* @param $cAddr1
-* @param $cAddr2
-* @param $shipType
-* @param $PCs
-* @param $cEmail
-* @param $carrValue
-* @param $carrCurr
-* @param $codAmt
-* @param $weight
-* @param $custVal
-* @param $custCurr
-* @param $insrAmt
-* @param $insrCurr
-* @param $itemDesc
-* @param $sName
-* @param $sContact
-* @param $sAddr1
-* @param $sAddr2
-* @param $sCity
-* @param $sPhone
-* @param $sCntry
-* @param $prefDelvDate
-* @param $gpsPoints
-* @return \SmsaSDK\Methods\addShipMPSResponse
 
+    /**
+     * @param $passKey
+     * @param $refNo
+     * @param $sentDate
+     * @param $idNo
+     * @param $cName
+     * @param $cntry
+     * @param $cCity
+     * @param $cZip
+     * @param $cPOBox
+     * @param $cMobile
+     * @param $cTel1
+     * @param $cTel2
+     * @param $cAddr1
+     * @param $cAddr2
+     * @param $shipType
+     * @param $PCs
+     * @param $cEmail
+     * @param $carrValue
+     * @param $carrCurr
+     * @param $codAmt
+     * @param $weight
+     * @param $custVal
+     * @param $custCurr
+     * @param $insrAmt
+     * @param $insrCurr
+     * @param $itemDesc
+     * @param $sName
+     * @param $sContact
+     * @param $sAddr1
+     * @param $sAddr2
+     * @param $sCity
+     * @param $sPhone
+     * @param $sCntry
+     * @param $prefDelvDate
+     * @param $gpsPoints
+     *
+     * @return \SmsaSDK\Methods\addShipMPSResponse
      */
     public static function addShipMPS($passKey = null, $refNo = null, $sentDate = null, $idNo = null, $cName = null, $cntry = null, $cCity = null, $cZip = null, $cPOBox = null, $cMobile = null, $cTel1 = null, $cTel2 = null, $cAddr1 = null, $cAddr2 = null, $shipType = null, $PCs = null, $cEmail = null, $carrValue = null, $carrCurr = null, $codAmt = null, $weight = null, $custVal = null, $custCurr = null, $insrAmt = null, $insrCurr = null, $itemDesc = null, $sName = null, $sContact = null, $sAddr1 = null, $sAddr2 = null, $sCity = null, $sPhone = null, $sCntry = null, $prefDelvDate = null, $gpsPoints = null)
     {
@@ -314,38 +315,38 @@ trait MethodsRedirector
             $arguments['gpsPoints'] = $gpsPoints;
         }
 
-
         return static::handleStaticCalls('addShipMPS', [$arguments]);
     }
-    /**
-* @param $passKey
-* @param $refNo
-* @param $sentDate
-* @param $idNo
-* @param $cName
-* @param $cntry
-* @param $cCity
-* @param $cZip
-* @param $cPOBox
-* @param $cMobile
-* @param $cTel1
-* @param $cTel2
-* @param $cAddr1
-* @param $cAddr2
-* @param $shipType
-* @param $PCs
-* @param $cEmail
-* @param $carrValue
-* @param $carrCurr
-* @param $codAmt
-* @param $weight
-* @param $custVal
-* @param $custCurr
-* @param $insrAmt
-* @param $insrCurr
-* @param $itemDesc
-* @return \SmsaSDK\Methods\addShipmentResponse
 
+    /**
+     * @param $passKey
+     * @param $refNo
+     * @param $sentDate
+     * @param $idNo
+     * @param $cName
+     * @param $cntry
+     * @param $cCity
+     * @param $cZip
+     * @param $cPOBox
+     * @param $cMobile
+     * @param $cTel1
+     * @param $cTel2
+     * @param $cAddr1
+     * @param $cAddr2
+     * @param $shipType
+     * @param $PCs
+     * @param $cEmail
+     * @param $carrValue
+     * @param $carrCurr
+     * @param $codAmt
+     * @param $weight
+     * @param $custVal
+     * @param $custCurr
+     * @param $insrAmt
+     * @param $insrCurr
+     * @param $itemDesc
+     *
+     * @return \SmsaSDK\Methods\addShipmentResponse
      */
     public static function addShipment($passKey = null, $refNo = null, $sentDate = null, $idNo = null, $cName = null, $cntry = null, $cCity = null, $cZip = null, $cPOBox = null, $cMobile = null, $cTel1 = null, $cTel2 = null, $cAddr1 = null, $cAddr2 = null, $shipType = null, $PCs = null, $cEmail = null, $carrValue = null, $carrCurr = null, $codAmt = null, $weight = null, $custVal = null, $custCurr = null, $insrAmt = null, $insrCurr = null, $itemDesc = null)
     {
@@ -435,40 +436,40 @@ trait MethodsRedirector
             $arguments['itemDesc'] = $itemDesc;
         }
 
-
         return static::handleStaticCalls('addShipment', [$arguments]);
     }
-    /**
-* @param $passKey
-* @param $refNo
-* @param $sentDate
-* @param $idNo
-* @param $cName
-* @param $cntry
-* @param $cCity
-* @param $cZip
-* @param $cPOBox
-* @param $cMobile
-* @param $cTel1
-* @param $cTel2
-* @param $cAddr1
-* @param $cAddr2
-* @param $shipType
-* @param $PCs
-* @param $cEmail
-* @param $carrValue
-* @param $carrCurr
-* @param $codAmt
-* @param $weight
-* @param $custVal
-* @param $custCurr
-* @param $insrAmt
-* @param $insrCurr
-* @param $itemDesc
-* @param $prefDelvDate
-* @param $gpsPoints
-* @return \SmsaSDK\Methods\addShipmentDelvResponse
 
+    /**
+     * @param $passKey
+     * @param $refNo
+     * @param $sentDate
+     * @param $idNo
+     * @param $cName
+     * @param $cntry
+     * @param $cCity
+     * @param $cZip
+     * @param $cPOBox
+     * @param $cMobile
+     * @param $cTel1
+     * @param $cTel2
+     * @param $cAddr1
+     * @param $cAddr2
+     * @param $shipType
+     * @param $PCs
+     * @param $cEmail
+     * @param $carrValue
+     * @param $carrCurr
+     * @param $codAmt
+     * @param $weight
+     * @param $custVal
+     * @param $custCurr
+     * @param $insrAmt
+     * @param $insrCurr
+     * @param $itemDesc
+     * @param $prefDelvDate
+     * @param $gpsPoints
+     *
+     * @return \SmsaSDK\Methods\addShipmentDelvResponse
      */
     public static function addShipmentDelv($passKey = null, $refNo = null, $sentDate = null, $idNo = null, $cName = null, $cntry = null, $cCity = null, $cZip = null, $cPOBox = null, $cMobile = null, $cTel1 = null, $cTel2 = null, $cAddr1 = null, $cAddr2 = null, $shipType = null, $PCs = null, $cEmail = null, $carrValue = null, $carrCurr = null, $codAmt = null, $weight = null, $custVal = null, $custCurr = null, $insrAmt = null, $insrCurr = null, $itemDesc = null, $prefDelvDate = null, $gpsPoints = null)
     {
@@ -564,15 +565,15 @@ trait MethodsRedirector
             $arguments['gpsPoints'] = $gpsPoints;
         }
 
-
         return static::handleStaticCalls('addShipmentDelv', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passkey
-* @param $reas
-* @return \SmsaSDK\Methods\cancelShipmentResponse
 
+    /**
+     * @param $awbNo
+     * @param $passkey
+     * @param $reas
+     *
+     * @return \SmsaSDK\Methods\cancelShipmentResponse
      */
     public static function cancelShipment($awbNo = null, $passkey = null, $reas = null)
     {
@@ -593,13 +594,13 @@ trait MethodsRedirector
             $arguments['reas'] = $reas;
         }
 
-
         return static::handleStaticCalls('cancelShipment', [$arguments]);
     }
-    /**
-* @param $passkey
-* @return \SmsaSDK\Methods\getAllRetailsResponse
 
+    /**
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getAllRetailsResponse
      */
     public static function getAllRetails($passkey = null)
     {
@@ -614,14 +615,14 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getAllRetails', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passKey
-* @return \SmsaSDK\Methods\getPDFResponse
 
+    /**
+     * @param $awbNo
+     * @param $passKey
+     *
+     * @return \SmsaSDK\Methods\getPDFResponse
      */
     public static function getPDF($awbNo = null, $passKey = null)
     {
@@ -639,15 +640,15 @@ trait MethodsRedirector
             $arguments['passKey'] = $passKey;
         }
 
-
         return static::handleStaticCalls('getPDF', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passKey
-* @param $forwrdr
-* @return \SmsaSDK\Methods\getPDFBrResponse
 
+    /**
+     * @param $awbNo
+     * @param $passKey
+     * @param $forwrdr
+     *
+     * @return \SmsaSDK\Methods\getPDFBrResponse
      */
     public static function getPDFBr($awbNo = null, $passKey = null, $forwrdr = null)
     {
@@ -668,14 +669,14 @@ trait MethodsRedirector
             $arguments['forwrdr'] = $forwrdr;
         }
 
-
         return static::handleStaticCalls('getPDFBr', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passKey
-* @return \SmsaSDK\Methods\getPDFSinoResponse
 
+    /**
+     * @param $awbNo
+     * @param $passKey
+     *
+     * @return \SmsaSDK\Methods\getPDFSinoResponse
      */
     public static function getPDFSino($awbNo = null, $passKey = null)
     {
@@ -693,13 +694,13 @@ trait MethodsRedirector
             $arguments['passKey'] = $passKey;
         }
 
-
         return static::handleStaticCalls('getPDFSino', [$arguments]);
     }
-    /**
-* @param $passkey
-* @return \SmsaSDK\Methods\getRTLCitiesResponse
 
+    /**
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getRTLCitiesResponse
      */
     public static function getRTLCities($passkey = null)
     {
@@ -714,14 +715,14 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getRTLCities', [$arguments]);
     }
-    /**
-* @param $cityCode
-* @param $passkey
-* @return \SmsaSDK\Methods\getRTLRetailsResponse
 
+    /**
+     * @param $cityCode
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getRTLRetailsResponse
      */
     public static function getRTLRetails($cityCode = null, $passkey = null)
     {
@@ -739,14 +740,14 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getRTLRetails', [$arguments]);
     }
-    /**
-* @param $rowId
-* @param $passKey
-* @return \SmsaSDK\Methods\getShipUpdatesResponse
 
+    /**
+     * @param $rowId
+     * @param $passKey
+     *
+     * @return \SmsaSDK\Methods\getShipUpdatesResponse
      */
     public static function getShipUpdates($rowId = null, $passKey = null)
     {
@@ -764,14 +765,14 @@ trait MethodsRedirector
             $arguments['passKey'] = $passKey;
         }
 
-
         return static::handleStaticCalls('getShipUpdates', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passkey
-* @return \SmsaSDK\Methods\getStatusResponse
 
+    /**
+     * @param $awbNo
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getStatusResponse
      */
     public static function getStatus($awbNo = null, $passkey = null)
     {
@@ -789,14 +790,14 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getStatus', [$arguments]);
     }
-    /**
-* @param $refNo
-* @param $passkey
-* @return \SmsaSDK\Methods\getStatusByRefResponse
 
+    /**
+     * @param $refNo
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getStatusByRefResponse
      */
     public static function getStatusByRef($refNo = null, $passkey = null)
     {
@@ -814,14 +815,14 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getStatusByRef', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passkey
-* @return \SmsaSDK\Methods\getTrackingResponse
 
+    /**
+     * @param $awbNo
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getTrackingResponse
      */
     public static function getTracking($awbNo = null, $passkey = null)
     {
@@ -839,14 +840,14 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getTracking', [$arguments]);
     }
-    /**
-* @param $refNo
-* @param $passkey
-* @return \SmsaSDK\Methods\getTrackingByRefResponse
 
+    /**
+     * @param $refNo
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getTrackingByRefResponse
      */
     public static function getTrackingByRef($refNo = null, $passkey = null)
     {
@@ -864,14 +865,14 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getTrackingByRef', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passkey
-* @return \SmsaSDK\Methods\getTrackingwithRefResponse
 
+    /**
+     * @param $awbNo
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\getTrackingwithRefResponse
      */
     public static function getTrackingwithRef($awbNo = null, $passkey = null)
     {
@@ -889,15 +890,15 @@ trait MethodsRedirector
             $arguments['passkey'] = $passkey;
         }
 
-
         return static::handleStaticCalls('getTrackingwithRef', [$arguments]);
     }
-    /**
-* @param $passKey
-* @param $refId
-* @param $orderLineItems
-* @return \SmsaSDK\Methods\saphOrderReadyResponse
 
+    /**
+     * @param $passKey
+     * @param $refId
+     * @param $orderLineItems
+     *
+     * @return \SmsaSDK\Methods\saphOrderReadyResponse
      */
     public static function saphOrderReady($passKey = null, $refId = null, $orderLineItems = null)
     {
@@ -918,14 +919,14 @@ trait MethodsRedirector
             $arguments['orderLineItems'] = $orderLineItems;
         }
 
-
         return static::handleStaticCalls('saphOrderReady', [$arguments]);
     }
-    /**
-* @param $awbNo
-* @param $passkey
-* @return \SmsaSDK\Methods\stoShipmentResponse
 
+    /**
+     * @param $awbNo
+     * @param $passkey
+     *
+     * @return \SmsaSDK\Methods\stoShipmentResponse
      */
     public static function stoShipment($awbNo = null, $passkey = null)
     {
@@ -942,7 +943,6 @@ trait MethodsRedirector
         if (!is_null($passkey)) {
             $arguments['passkey'] = $passkey;
         }
-
 
         return static::handleStaticCalls('stoShipment', [$arguments]);
     }

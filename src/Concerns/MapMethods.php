@@ -3,21 +3,19 @@
 namespace SmsaSDK\Concerns;
 
 use SmsaSDK\Config;
-use SmsaSDK\Exceptions\InvalidArgument;
-use SmsaSDK\Methods\SMSAWebService;
 
 trait MapMethods
 {
     /**
      * mergeCommonData
-     * Insert description here
+     * Insert description here.
      *
      * @param $methodHandler
      * @param $arguments
      *
      * @return
      */
-    private function mergeCommonData($methodHandler, $arguments = []) 
+    private function mergeCommonData($methodHandler, $arguments = [])
     {
         foreach (Config::getCommonData() as $key => $value) {
             $setterMethod = $this->getSetterMethodFromKey($key);
@@ -25,32 +23,33 @@ trait MapMethods
                 $methodHandler->$setterMethod($value);
             }
         }
+
         return $methodHandler;
     }
 
     /**
      * getSetterMethodFromKey
-     * Insert description here
+     * Insert description here.
      *
      * @param $key
      *
      * @return
      */
-    private function getSetterMethodFromKey($key) 
+    private function getSetterMethodFromKey($key)
     {
-        return 'set' . ucfirst($key);
+        return 'set'.ucfirst($key);
     }
 
     /**
      * fillNull
-     * Insert description here
+     * Insert description here.
      *
      * @param $arguments
      * @param $value
      *
      * @return
      */
-    private function fillNull($arguments, $value) 
+    private function fillNull($arguments, $value)
     {
         $missingArguments = [];
         $keys = array_keys($arguments);
@@ -58,7 +57,7 @@ trait MapMethods
         $properties = $this->getReflectionProperties($this->reflection);
 
         foreach ($properties as $key) {
-            if(! in_array($key, $keys)) {
+            if (!in_array($key, $keys)) {
                 $missingArguments[] = $key;
             }
         }
@@ -69,16 +68,18 @@ trait MapMethods
 
         return $arguments;
     }
+
     /**
      * @param $arguments
      * @param $class
+     *
      * @return mixed
      */
     private function prepareMethodHandler($arguments, $class)
     {
         $this->validate($arguments, $class);
 
-        if($this->nullValues !== null) {
+        if ($this->nullValues !== null) {
             $arguments = $this->fillNull($arguments, $this->nullValues);
         }
 

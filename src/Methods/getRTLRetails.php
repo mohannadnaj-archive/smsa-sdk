@@ -4,14 +4,13 @@ namespace SmsaSDK\Methods;
 
 class getRTLRetails
 {
-
     /**
-     * @var string $cityCode
+     * @var string
      */
     protected $cityCode = null;
 
     /**
-     * @var string $passkey
+     * @var string
      */
     protected $passkey = null;
 
@@ -35,11 +34,13 @@ class getRTLRetails
 
     /**
      * @param string $cityCode
+     *
      * @return \SmsaSDK\Methods\getRTLRetails
      */
     public function setCityCode($cityCode)
     {
         $this->cityCode = $cityCode;
+
         return $this;
     }
 
@@ -53,12 +54,13 @@ class getRTLRetails
 
     /**
      * @param string $passkey
+     *
      * @return \SmsaSDK\Methods\getRTLRetails
      */
     public function setPasskey($passkey)
     {
         $this->passkey = $passkey;
+
         return $this;
     }
-
 }

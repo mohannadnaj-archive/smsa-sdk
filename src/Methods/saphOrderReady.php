@@ -4,19 +4,18 @@ namespace SmsaSDK\Methods;
 
 class saphOrderReady
 {
-
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
     /**
-     * @var string $refId
+     * @var string
      */
     protected $refId = null;
 
     /**
-     * @var ArrayOfOrderLineItem $orderLineItems
+     * @var ArrayOfOrderLineItem
      */
     protected $orderLineItems = null;
 
@@ -42,11 +41,13 @@ class saphOrderReady
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\saphOrderReady
      */
     public function setPassKey($passKey)
     {
         $this->passKey = $passKey;
+
         return $this;
     }
 
@@ -60,11 +61,13 @@ class saphOrderReady
 
     /**
      * @param string $refId
+     *
      * @return \SmsaSDK\Methods\saphOrderReady
      */
     public function setRefId($refId)
     {
         $this->refId = $refId;
+
         return $this;
     }
 
@@ -78,12 +81,13 @@ class saphOrderReady
 
     /**
      * @param ArrayOfOrderLineItem $orderLineItems
+     *
      * @return \SmsaSDK\Methods\saphOrderReady
      */
     public function setOrderLineItems($orderLineItems)
     {
         $this->orderLineItems = $orderLineItems;
+
         return $this;
     }
-
 }

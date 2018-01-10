@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class saphOrderReadyResponse
 {
-
     /**
-     * @var string $saphOrderReadyResult
+     * @var string
      */
     protected $saphOrderReadyResult = null;
 
@@ -28,12 +27,13 @@ class saphOrderReadyResponse
 
     /**
      * @param string $saphOrderReadyResult
+     *
      * @return \SmsaSDK\Methods\saphOrderReadyResponse
      */
     public function setSaphOrderReadyResult($saphOrderReadyResult)
     {
         $this->saphOrderReadyResult = $saphOrderReadyResult;
+
         return $this;
     }
-
 }

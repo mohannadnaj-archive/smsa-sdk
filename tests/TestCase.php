@@ -13,8 +13,8 @@ class TestCase extends PHPUnitTestCase
         // it's setup in phpunit.xml somehow is not working. Instruction copied from:
         // https://coderwall.com/p/ka6o8a/catch-php-warnings-and-notices-when-unit-testing
         // and a related issue: https://github.com/sebastianbergmann/phpunit/issues/2675
-        set_error_handler(function($errno, $errstr, $errfile, $errline) {
-            throw new \RuntimeException($errstr . " on line " . $errline . " in file " . $errfile);
+        set_error_handler(function ($errno, $errstr, $errfile, $errline) {
+            throw new \RuntimeException($errstr.' on line '.$errline.' in file '.$errfile);
         });
     }
 

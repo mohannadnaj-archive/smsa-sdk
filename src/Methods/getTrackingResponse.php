@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getTrackingResponse
 {
-
     /**
-     * @var getTrackingResult $getTrackingResult
+     * @var getTrackingResult
      */
     protected $getTrackingResult = null;
 
@@ -28,12 +27,13 @@ class getTrackingResponse
 
     /**
      * @param getTrackingResult $getTrackingResult
+     *
      * @return \SmsaSDK\Methods\getTrackingResponse
      */
     public function setGetTrackingResult($getTrackingResult)
     {
         $this->getTrackingResult = $getTrackingResult;
+
         return $this;
     }
-
 }

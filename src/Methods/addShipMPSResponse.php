@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class addShipMPSResponse
 {
-
     /**
-     * @var string $addShipMPSResult
+     * @var string
      */
     protected $addShipMPSResult = null;
 
@@ -28,12 +27,13 @@ class addShipMPSResponse
 
     /**
      * @param string $addShipMPSResult
+     *
      * @return \SmsaSDK\Methods\addShipMPSResponse
      */
     public function setAddShipMPSResult($addShipMPSResult)
     {
         $this->addShipMPSResult = $addShipMPSResult;
+
         return $this;
     }
-
 }

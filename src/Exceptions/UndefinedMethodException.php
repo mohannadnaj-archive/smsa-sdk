@@ -1,11 +1,11 @@
 <?php
+
 namespace SmsaSDK\Exceptions;
 
 /**
  * UndefinedMethodException
- * Insert description here
+ * Insert description here.
  */
 class UndefinedMethodException extends \Exception
 {
-    
 }

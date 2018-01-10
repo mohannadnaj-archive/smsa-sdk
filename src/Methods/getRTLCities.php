@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getRTLCities
 {
-
     /**
-     * @var string $passkey
+     * @var string
      */
     protected $passkey = null;
 
@@ -28,12 +27,13 @@ class getRTLCities
 
     /**
      * @param string $passkey
+     *
      * @return \SmsaSDK\Methods\getRTLCities
      */
     public function setPasskey($passkey)
     {
         $this->passkey = $passkey;
+
         return $this;
     }
-
 }

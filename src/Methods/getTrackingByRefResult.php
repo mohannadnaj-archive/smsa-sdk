@@ -4,14 +4,13 @@ namespace SmsaSDK\Methods;
 
 class getTrackingByRefResult
 {
-
     /**
-     * @var string $schema
+     * @var string
      */
     protected $schema = null;
 
     /**
-     * @var string $any
+     * @var string
      */
     protected $any = null;
 
@@ -35,11 +34,13 @@ class getTrackingByRefResult
 
     /**
      * @param string $schema
+     *
      * @return \SmsaSDK\Methods\getTrackingByRefResult
      */
     public function setSchema($schema)
     {
         $this->schema = $schema;
+
         return $this;
     }
 
@@ -53,12 +54,13 @@ class getTrackingByRefResult
 
     /**
      * @param string $any
+     *
      * @return \SmsaSDK\Methods\getTrackingByRefResult
      */
     public function setAny($any)
     {
         $this->any = $any;
+
         return $this;
     }
-
 }

@@ -4,14 +4,13 @@ namespace SmsaSDK\Methods;
 
 class getPDFSino
 {
-
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
@@ -35,11 +34,13 @@ class getPDFSino
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\getPDFSino
      */
     public function setAwbNo($awbNo)
     {
         $this->awbNo = $awbNo;
+
         return $this;
     }
 
@@ -53,12 +54,13 @@ class getPDFSino
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\getPDFSino
      */
     public function setPassKey($passKey)
     {
         $this->passKey = $passKey;
+
         return $this;
     }
-
 }

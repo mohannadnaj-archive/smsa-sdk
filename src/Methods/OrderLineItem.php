@@ -4,26 +4,23 @@ namespace SmsaSDK\Methods;
 
 class OrderLineItem
 {
-
     /**
-     * @var string $iSKU
+     * @var string
      */
     protected $iSKU = null;
 
     /**
-     * @var string $iQty
+     * @var string
      */
     protected $iQty = null;
 
     /**
-     * @var string $iSerial
+     * @var string
      */
     protected $iSerial = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -36,11 +33,13 @@ class OrderLineItem
 
     /**
      * @param string $iSKU
+     *
      * @return \SmsaSDK\Methods\OrderLineItem
      */
     public function setISKU($iSKU)
     {
         $this->iSKU = $iSKU;
+
         return $this;
     }
 
@@ -54,11 +53,13 @@ class OrderLineItem
 
     /**
      * @param string $iQty
+     *
      * @return \SmsaSDK\Methods\OrderLineItem
      */
     public function setIQty($iQty)
     {
         $this->iQty = $iQty;
+
         return $this;
     }
 
@@ -72,12 +73,13 @@ class OrderLineItem
 
     /**
      * @param string $iSerial
+     *
      * @return \SmsaSDK\Methods\OrderLineItem
      */
     public function setISerial($iSerial)
     {
         $this->iSerial = $iSerial;
+
         return $this;
     }
-
 }

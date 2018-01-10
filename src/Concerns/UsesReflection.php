@@ -1,26 +1,22 @@
 <?php
-namespace SmsaSDK\Concerns;
 
-use \ReflectionClass;
-use \ReflectionProperty;
-use SmsaSDK\Config;
+namespace SmsaSDK\Concerns;
 
 trait UsesReflection
 {
-
     /**
      * getReflectionProperties
-     * Insert description here
+     * Insert description here.
      *
      * @param $reflection
      *
      * @return
      */
-    private function getReflectionProperties($reflection) 
+    private function getReflectionProperties($reflection)
     {
         $properties = [];
 
-        foreach($reflection->getProperties() as $property) {
+        foreach ($reflection->getProperties() as $property) {
             $properties[] = $property->name;
         }
 

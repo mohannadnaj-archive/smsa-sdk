@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getRTLRetailsResponse
 {
-
     /**
-     * @var getRTLRetailsResult $getRTLRetailsResult
+     * @var getRTLRetailsResult
      */
     protected $getRTLRetailsResult = null;
 
@@ -28,12 +27,13 @@ class getRTLRetailsResponse
 
     /**
      * @param getRTLRetailsResult $getRTLRetailsResult
+     *
      * @return \SmsaSDK\Methods\getRTLRetailsResponse
      */
     public function setGetRTLRetailsResult($getRTLRetailsResult)
     {
         $this->getRTLRetailsResult = $getRTLRetailsResult;
+
         return $this;
     }
-
 }

@@ -2,14 +2,12 @@
 
 namespace SmsaSDKTests;
 
-use SmsaSDK\Smsa;
 use SmsaSDK\Config;
-use SmsaSDK\SoapClient;
-use SmsaSDKTests\TestCase;
 use SmsaSDK\Exceptions\InvalidArgumentException;
-use SmsaSDK\Exceptions\UndefinedMethodException;
+use SmsaSDK\Smsa;
+use SmsaSDK\SoapClient;
 
-class SmsaTest extends TestCase
+class SmsaClientTest extends TestCase
 {
     private $client;
 
@@ -25,8 +23,10 @@ class SmsaTest extends TestCase
     {
         parent::tearDown();
     }
+
     /** @test */
-    public function it_call_the_soap_client() {
+    public function it_call_the_soap_client()
+    {
         $this->client
             ->method('getStatus')
             ->willReturn('test');
@@ -35,16 +35,18 @@ class SmsaTest extends TestCase
     }
 
     /** @test */
-    public function soap_client_preserves_calls() {
+    public function soap_client_preserves_calls()
+    {
         $this->client
             ->method('getStatus')
             ->willReturn('test');
         Smsa::getStatus(['awbNo'=>'foo-bar']);
-        $this->assertEquals("foo-bar", SoapClient::$lastCall['arguments'][0]->getAwbNo());
+        $this->assertEquals('foo-bar', SoapClient::$lastCall['arguments'][0]->getAwbNo());
     }
 
     /** @test */
-    public function it_can_fill_null_values() {
+    public function it_can_fill_null_values()
+    {
         // Exception is not thrown
         Smsa::nullValues('');
         $this->assertNull(Smsa::addShipment(['refNo'=>'123']));
@@ -55,7 +57,8 @@ class SmsaTest extends TestCase
         $this->assertNull(Smsa::addShipment(['refNo'=>'123']));
     }
 
-    private function mockSoapClient() {
+    private function mockSoapClient()
+    {
         $wsdlFilePath = Config::get('wsdl_file_path');
         $wsdlMock = $this->getMockFromWsdl($wsdlFilePath);
         SoapClient::setTestingClient($wsdlMock);

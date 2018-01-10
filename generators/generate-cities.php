@@ -1,9 +1,10 @@
 <?php
+
 require __DIR__.'/../vendor/autoload.php';
 
 use SmsaSDK\Smsa;
 
-$dist = __DIR__ . '/cities.json';
+$dist = __DIR__.'/cities.json';
 
 echo "Fetch cities\n\r";
 
