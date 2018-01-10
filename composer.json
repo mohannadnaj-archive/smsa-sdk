@@ -1,12 +1,22 @@
 {
     "name": "mohannadnaj/smsa-sdk",
-    "description": "SMSA Integration",
+    "description": "Simple PHP package for integrating SMSA Web Services (SECOM).",
     "type": "library",
+    "keywords": [
+        "SMSA",
+        "SmsaExpress",
+        "SmsaSDK"
+    ],
     "require-dev": {
         "phpunit/phpunit": "^5.6",
         "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
     },
     "license": "MIT",
+    "homepage": "https://github.com/MohannadNaj/smsa-sdk",
+    "support": {
+        "issues": "https://github.com/MohannadNaj/smsa-sdk/issues",
+        "source": "https://github.com/MohannadNaj/smsa-sdk"
+    },
     "authors": [
         {
             "name": "MohannadNaj",
@@ -25,6 +35,9 @@
             "aliases": {
                 "Smsa": "SmsaSDK\\Smsa"
             }
+        },
+        "branch-alias": {
+            "dev-master": "1.x.x-dev"
         }
     },
     "require": {
