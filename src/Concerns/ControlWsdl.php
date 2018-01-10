@@ -1,14 +1,14 @@
 <?php
+
 namespace SmsaSDK\Concerns;
 
 use SmsaSDK\Config;
 
 trait ControlWsdl
 {
-
     /**
      * downloadWsdl
-     * Insert description here
+     * Insert description here.
      *
      * @param $path
      *
@@ -16,31 +16,30 @@ trait ControlWsdl
      */
     public function downloadWsdl($path = null)
     {
-        if(is_null($path)) {
+        if (is_null($path)) {
             $path = $this->getWsdlFilePath();
         }
 
-        $wsdl =  file_get_contents($this->uri);
+        $wsdl = file_get_contents($this->uri);
         file_put_contents($path, $wsdl);
 
         return $path;
     }
 
-
     /**
      * setWsdlFilePath
-     * Insert description here
+     * Insert description here.
      *
      * @return
      */
-    private function setWsdlFilePath() 
+    private function setWsdlFilePath()
     {
         $this->wsdlFilePath = Config::get('wsdl_file_path');
     }
 
     /**
      * getWsdlFilePath
-     * Insert description here
+     * Insert description here.
      *
      * @return
      */

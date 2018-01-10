@@ -4,144 +4,143 @@ namespace SmsaSDK\Methods;
 
 class addShipmentDelv
 {
-
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
     /**
-     * @var string $refNo
+     * @var string
      */
     protected $refNo = null;
 
     /**
-     * @var string $sentDate
+     * @var string
      */
     protected $sentDate = null;
 
     /**
-     * @var string $idNo
+     * @var string
      */
     protected $idNo = null;
 
     /**
-     * @var string $cName
+     * @var string
      */
     protected $cName = null;
 
     /**
-     * @var string $cntry
+     * @var string
      */
     protected $cntry = null;
 
     /**
-     * @var string $cCity
+     * @var string
      */
     protected $cCity = null;
 
     /**
-     * @var string $cZip
+     * @var string
      */
     protected $cZip = null;
 
     /**
-     * @var string $cPOBox
+     * @var string
      */
     protected $cPOBox = null;
 
     /**
-     * @var string $cMobile
+     * @var string
      */
     protected $cMobile = null;
 
     /**
-     * @var string $cTel1
+     * @var string
      */
     protected $cTel1 = null;
 
     /**
-     * @var string $cTel2
+     * @var string
      */
     protected $cTel2 = null;
 
     /**
-     * @var string $cAddr1
+     * @var string
      */
     protected $cAddr1 = null;
 
     /**
-     * @var string $cAddr2
+     * @var string
      */
     protected $cAddr2 = null;
 
     /**
-     * @var string $shipType
+     * @var string
      */
     protected $shipType = null;
 
     /**
-     * @var int $PCs
+     * @var int
      */
     protected $PCs = null;
 
     /**
-     * @var string $cEmail
+     * @var string
      */
     protected $cEmail = null;
 
     /**
-     * @var string $carrValue
+     * @var string
      */
     protected $carrValue = null;
 
     /**
-     * @var string $carrCurr
+     * @var string
      */
     protected $carrCurr = null;
 
     /**
-     * @var string $codAmt
+     * @var string
      */
     protected $codAmt = null;
 
     /**
-     * @var string $weight
+     * @var string
      */
     protected $weight = null;
 
     /**
-     * @var string $custVal
+     * @var string
      */
     protected $custVal = null;
 
     /**
-     * @var string $custCurr
+     * @var string
      */
     protected $custCurr = null;
 
     /**
-     * @var string $insrAmt
+     * @var string
      */
     protected $insrAmt = null;
 
     /**
-     * @var string $insrCurr
+     * @var string
      */
     protected $insrCurr = null;
 
     /**
-     * @var string $itemDesc
+     * @var string
      */
     protected $itemDesc = null;
 
     /**
-     * @var string $prefDelvDate
+     * @var string
      */
     protected $prefDelvDate = null;
 
     /**
-     * @var string $gpsPoints
+     * @var string
      */
     protected $gpsPoints = null;
 
@@ -217,11 +216,13 @@ class addShipmentDelv
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setPassKey($passKey)
     {
         $this->passKey = $passKey;
+
         return $this;
     }
 
@@ -235,11 +236,13 @@ class addShipmentDelv
 
     /**
      * @param string $refNo
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setRefNo($refNo)
     {
         $this->refNo = $refNo;
+
         return $this;
     }
 
@@ -253,11 +256,13 @@ class addShipmentDelv
 
     /**
      * @param string $sentDate
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setSentDate($sentDate)
     {
         $this->sentDate = $sentDate;
+
         return $this;
     }
 
@@ -271,11 +276,13 @@ class addShipmentDelv
 
     /**
      * @param string $idNo
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setIdNo($idNo)
     {
         $this->idNo = $idNo;
+
         return $this;
     }
 
@@ -289,11 +296,13 @@ class addShipmentDelv
 
     /**
      * @param string $cName
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCName($cName)
     {
         $this->cName = $cName;
+
         return $this;
     }
 
@@ -307,11 +316,13 @@ class addShipmentDelv
 
     /**
      * @param string $cntry
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCntry($cntry)
     {
         $this->cntry = $cntry;
+
         return $this;
     }
 
@@ -325,11 +336,13 @@ class addShipmentDelv
 
     /**
      * @param string $cCity
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCCity($cCity)
     {
         $this->cCity = $cCity;
+
         return $this;
     }
 
@@ -343,11 +356,13 @@ class addShipmentDelv
 
     /**
      * @param string $cZip
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCZip($cZip)
     {
         $this->cZip = $cZip;
+
         return $this;
     }
 
@@ -361,11 +376,13 @@ class addShipmentDelv
 
     /**
      * @param string $cPOBox
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCPOBox($cPOBox)
     {
         $this->cPOBox = $cPOBox;
+
         return $this;
     }
 
@@ -379,11 +396,13 @@ class addShipmentDelv
 
     /**
      * @param string $cMobile
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCMobile($cMobile)
     {
         $this->cMobile = $cMobile;
+
         return $this;
     }
 
@@ -397,11 +416,13 @@ class addShipmentDelv
 
     /**
      * @param string $cTel1
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCTel1($cTel1)
     {
         $this->cTel1 = $cTel1;
+
         return $this;
     }
 
@@ -415,11 +436,13 @@ class addShipmentDelv
 
     /**
      * @param string $cTel2
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCTel2($cTel2)
     {
         $this->cTel2 = $cTel2;
+
         return $this;
     }
 
@@ -433,11 +456,13 @@ class addShipmentDelv
 
     /**
      * @param string $cAddr1
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCAddr1($cAddr1)
     {
         $this->cAddr1 = $cAddr1;
+
         return $this;
     }
 
@@ -451,11 +476,13 @@ class addShipmentDelv
 
     /**
      * @param string $cAddr2
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCAddr2($cAddr2)
     {
         $this->cAddr2 = $cAddr2;
+
         return $this;
     }
 
@@ -469,11 +496,13 @@ class addShipmentDelv
 
     /**
      * @param string $shipType
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setShipType($shipType)
     {
         $this->shipType = $shipType;
+
         return $this;
     }
 
@@ -487,11 +516,13 @@ class addShipmentDelv
 
     /**
      * @param int $PCs
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setPCs($PCs)
     {
         $this->PCs = $PCs;
+
         return $this;
     }
 
@@ -505,11 +536,13 @@ class addShipmentDelv
 
     /**
      * @param string $cEmail
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCEmail($cEmail)
     {
         $this->cEmail = $cEmail;
+
         return $this;
     }
 
@@ -523,11 +556,13 @@ class addShipmentDelv
 
     /**
      * @param string $carrValue
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCarrValue($carrValue)
     {
         $this->carrValue = $carrValue;
+
         return $this;
     }
 
@@ -541,11 +576,13 @@ class addShipmentDelv
 
     /**
      * @param string $carrCurr
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCarrCurr($carrCurr)
     {
         $this->carrCurr = $carrCurr;
+
         return $this;
     }
 
@@ -559,11 +596,13 @@ class addShipmentDelv
 
     /**
      * @param string $codAmt
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCodAmt($codAmt)
     {
         $this->codAmt = $codAmt;
+
         return $this;
     }
 
@@ -577,11 +616,13 @@ class addShipmentDelv
 
     /**
      * @param string $weight
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setWeight($weight)
     {
         $this->weight = $weight;
+
         return $this;
     }
 
@@ -595,11 +636,13 @@ class addShipmentDelv
 
     /**
      * @param string $custVal
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCustVal($custVal)
     {
         $this->custVal = $custVal;
+
         return $this;
     }
 
@@ -613,11 +656,13 @@ class addShipmentDelv
 
     /**
      * @param string $custCurr
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setCustCurr($custCurr)
     {
         $this->custCurr = $custCurr;
+
         return $this;
     }
 
@@ -631,11 +676,13 @@ class addShipmentDelv
 
     /**
      * @param string $insrAmt
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setInsrAmt($insrAmt)
     {
         $this->insrAmt = $insrAmt;
+
         return $this;
     }
 
@@ -649,11 +696,13 @@ class addShipmentDelv
 
     /**
      * @param string $insrCurr
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setInsrCurr($insrCurr)
     {
         $this->insrCurr = $insrCurr;
+
         return $this;
     }
 
@@ -667,11 +716,13 @@ class addShipmentDelv
 
     /**
      * @param string $itemDesc
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setItemDesc($itemDesc)
     {
         $this->itemDesc = $itemDesc;
+
         return $this;
     }
 
@@ -685,11 +736,13 @@ class addShipmentDelv
 
     /**
      * @param string $prefDelvDate
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setPrefDelvDate($prefDelvDate)
     {
         $this->prefDelvDate = $prefDelvDate;
+
         return $this;
     }
 
@@ -703,12 +756,13 @@ class addShipmentDelv
 
     /**
      * @param string $gpsPoints
+     *
      * @return \SmsaSDK\Methods\addShipmentDelv
      */
     public function setGpsPoints($gpsPoints)
     {
         $this->gpsPoints = $gpsPoints;
+
         return $this;
     }
-
 }

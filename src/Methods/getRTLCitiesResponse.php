@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getRTLCitiesResponse
 {
-
     /**
-     * @var getRTLCitiesResult $getRTLCitiesResult
+     * @var getRTLCitiesResult
      */
     protected $getRTLCitiesResult = null;
 
@@ -28,12 +27,13 @@ class getRTLCitiesResponse
 
     /**
      * @param getRTLCitiesResult $getRTLCitiesResult
+     *
      * @return \SmsaSDK\Methods\getRTLCitiesResponse
      */
     public function setGetRTLCitiesResult($getRTLCitiesResult)
     {
         $this->getRTLCitiesResult = $getRTLCitiesResult;
+
         return $this;
     }
-
 }

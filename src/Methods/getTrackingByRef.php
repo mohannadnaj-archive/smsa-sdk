@@ -4,14 +4,13 @@ namespace SmsaSDK\Methods;
 
 class getTrackingByRef
 {
-
     /**
-     * @var string $refNo
+     * @var string
      */
     protected $refNo = null;
 
     /**
-     * @var string $passkey
+     * @var string
      */
     protected $passkey = null;
 
@@ -35,11 +34,13 @@ class getTrackingByRef
 
     /**
      * @param string $refNo
+     *
      * @return \SmsaSDK\Methods\getTrackingByRef
      */
     public function setRefNo($refNo)
     {
         $this->refNo = $refNo;
+
         return $this;
     }
 
@@ -53,12 +54,13 @@ class getTrackingByRef
 
     /**
      * @param string $passkey
+     *
      * @return \SmsaSDK\Methods\getTrackingByRef
      */
     public function setPasskey($passkey)
     {
         $this->passkey = $passkey;
+
         return $this;
     }
-
 }

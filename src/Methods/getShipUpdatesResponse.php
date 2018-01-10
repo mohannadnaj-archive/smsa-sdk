@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getShipUpdatesResponse
 {
-
     /**
-     * @var getShipUpdatesResult $getShipUpdatesResult
+     * @var getShipUpdatesResult
      */
     protected $getShipUpdatesResult = null;
 
@@ -28,12 +27,13 @@ class getShipUpdatesResponse
 
     /**
      * @param getShipUpdatesResult $getShipUpdatesResult
+     *
      * @return \SmsaSDK\Methods\getShipUpdatesResponse
      */
     public function setGetShipUpdatesResult($getShipUpdatesResult)
     {
         $this->getShipUpdatesResult = $getShipUpdatesResult;
+
         return $this;
     }
-
 }

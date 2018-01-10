@@ -4,19 +4,18 @@ namespace SmsaSDK\Methods;
 
 class getPDFBr
 {
-
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
     /**
-     * @var string $forwrdr
+     * @var string
      */
     protected $forwrdr = null;
 
@@ -42,11 +41,13 @@ class getPDFBr
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\getPDFBr
      */
     public function setAwbNo($awbNo)
     {
         $this->awbNo = $awbNo;
+
         return $this;
     }
 
@@ -60,11 +61,13 @@ class getPDFBr
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\getPDFBr
      */
     public function setPassKey($passKey)
     {
         $this->passKey = $passKey;
+
         return $this;
     }
 
@@ -78,12 +81,13 @@ class getPDFBr
 
     /**
      * @param string $forwrdr
+     *
      * @return \SmsaSDK\Methods\getPDFBr
      */
     public function setForwrdr($forwrdr)
     {
         $this->forwrdr = $forwrdr;
+
         return $this;
     }
-
 }

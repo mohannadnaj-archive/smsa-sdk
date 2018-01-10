@@ -2,8 +2,6 @@
 
 namespace SmsaSDK;
 
-use SmsaSDK\Smsa;
-
 /**
  * Config
  * Configuration Repository for Smsa.
@@ -11,9 +9,9 @@ use SmsaSDK\Smsa;
 class Config
 {
     public static $config = [
-        'wsdl_file_path' => __DIR__ . '/data/SMSA.wsdl',
+        'wsdl_file_path'   => __DIR__.'/data/SMSA.wsdl',
         'smsa_testing_key' => 'my-smsa-test-key',
-        'smsa_uri' => 'http://track.smsaexpress.com/SECOM/SMSAwebService.asmx?wsdl'
+        'smsa_uri'         => 'http://track.smsaexpress.com/SECOM/SMSAwebService.asmx?wsdl',
     ];
 
     public static $commonData = [];
@@ -43,6 +41,7 @@ class Config
     public static function set(string $name, $value)
     {
         static::$config[$name] = $value;
+
         return $this;
     }
 
@@ -52,7 +51,7 @@ class Config
      *
      * @return array
      */
-    public static function getCommonData() 
+    public static function getCommonData()
     {
         return static::$commonData + [
             'passkey' => Smsa::getKey(),

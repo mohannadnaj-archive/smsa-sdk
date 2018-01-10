@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getPDFSinoResponse
 {
-
     /**
-     * @var base64Binary $getPDFSinoResult
+     * @var base64Binary
      */
     protected $getPDFSinoResult = null;
 
@@ -28,12 +27,13 @@ class getPDFSinoResponse
 
     /**
      * @param base64Binary $getPDFSinoResult
+     *
      * @return \SmsaSDK\Methods\getPDFSinoResponse
      */
     public function setGetPDFSinoResult($getPDFSinoResult)
     {
         $this->getPDFSinoResult = $getPDFSinoResult;
+
         return $this;
     }
-
 }

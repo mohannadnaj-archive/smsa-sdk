@@ -2,25 +2,23 @@
 
 namespace SmsaSDK\Concerns;
 
-use \ReflectionClass;
-use \ReflectionProperty;
+use ReflectionClass;
 use SmsaSDK\Config;
-use SmsaSDK\Methods\SMSAWebService;
-use SmsaSDK\Exceptions\UndefinedMethodException;
 use SmsaSDK\Exceptions\InvalidArgumentException;
+use SmsaSDK\Exceptions\UndefinedMethodException;
 
 trait ValidateData
 {
     /**
      * validate
-     * Insert description here
+     * Insert description here.
      *
      * @param $arguments
      * @param $class
      *
      * @return
      */
-    private function validate($arguments, $class) 
+    private function validate($arguments, $class)
     {
         $this->validateMethodExistance($class);
 
@@ -30,21 +28,21 @@ trait ValidateData
 
         $this->validateMethodHasDefinedArguments($arguments, $class);
 
-        if($this->nullValues === null) {
+        if ($this->nullValues === null) {
             $this->validateMissingArguments($arguments, $class);
         }
     }
 
     /**
      * validateMissingArguments
-     * Insert description here
+     * Insert description here.
      *
      * @param $arguments
      * @param $class
      *
      * @return
      */
-    private function validateMissingArguments($arguments, $class) 
+    private function validateMissingArguments($arguments, $class)
     {
         $missingArguments = [];
         $keys = array_keys($arguments);
@@ -52,89 +50,90 @@ trait ValidateData
         $properties = $this->getReflectionProperties($this->reflection);
 
         foreach ($properties as $key) {
-            if(! in_array($key, $keys) && ! in_array($key, $commonKeys)) {
+            if (!in_array($key, $keys) && !in_array($key, $commonKeys)) {
                 $missingArguments[] = $key;
             }
         }
 
-        if(count($missingArguments) > 0) {
+        if (count($missingArguments) > 0) {
             $classBaseName = $this->getBaseName($class);
-            throw new InvalidArgumentException("calling the method [$classBaseName] some arguments are missing: [" . implode(', ', $missingArguments) . "]. required arguments: [" . implode(', ', $properties) . "].");            
+
+            throw new InvalidArgumentException("calling the method [$classBaseName] some arguments are missing: [".implode(', ', $missingArguments).']. required arguments: ['.implode(', ', $properties).'].');
         }
     }
 
     /**
      * validateMethodHasDefinedArguments
-     * Insert description here
+     * Insert description here.
      *
      * @param $arguments
      * @param $class
      *
      * @return
      */
-    private function validateMethodHasDefinedArguments($arguments, $class) 
+    private function validateMethodHasDefinedArguments($arguments, $class)
     {
         $unknownArguments = [];
 
         foreach ($arguments as $key => $value) {
             $setterMethod = $this->getSetterMethodFromKey($key);
-            if(! $this->reflection->hasMethod($setterMethod)) {
+            if (!$this->reflection->hasMethod($setterMethod)) {
                 $unknownArguments[] = $key;
             }
         }
 
-
-        if(count($unknownArguments) > 0) {
+        if (count($unknownArguments) > 0) {
             $properties = $this->getReflectionProperties($this->reflection);
             $classBaseName = $this->getBaseName($class);
 
-            throw new InvalidArgumentException("Argument passed to the method [$classBaseName] is not expected to this method. unknown arguments: [" . implode(', ', $unknownArguments) . "]. required arguments: [" . implode(', ', $properties) . "].");
+            throw new InvalidArgumentException("Argument passed to the method [$classBaseName] is not expected to this method. unknown arguments: [".implode(', ', $unknownArguments).']. required arguments: ['.implode(', ', $properties).'].');
         }
     }
 
     /**
      * validateArgumentsType
-     * Insert description here
+     * Insert description here.
      *
      * @param $arguments
      * @param $class
      *
      * @return
      */
-    private function validateArgumentsType($arguments, $class) 
+    private function validateArgumentsType($arguments, $class)
     {
         $classBaseName = $this->getBaseName($class);
 
-        if(! is_array($arguments)) {
-            throw new InvalidArgumentException("Arguments passed to the method [$classBaseName] should be an array, " . gettype($arguments) . " given");
+        if (!is_array($arguments)) {
+            throw new InvalidArgumentException("Arguments passed to the method [$classBaseName] should be an array, ".gettype($arguments).' given');
         }
     }
 
     /**
      * validateMethodExistance
-     * Insert description here
+     * Insert description here.
      *
      * @param $class
      *
      * @return
      */
-    private function validateMethodExistance($class) 
+    private function validateMethodExistance($class)
     {
-        if(! class_exists($class)) {
+        if (!class_exists($class)) {
             $classBaseName = $this->getBaseName($class);
+
             throw new UndefinedMethodException("the method [$classBaseName] is not defined, there is no matching class handler at: $class");
         }
     }
 
     /**
      * getBaseName
-     * Insert description here
+     * Insert description here.
      *
      * @param $class
      *
      * @return
      */
-    private function getBaseName($class) 
+    private function getBaseName($class)
     {
         return preg_replace('/.*\\\\/', '', $class);
     }

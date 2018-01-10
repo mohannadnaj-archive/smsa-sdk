@@ -1,16 +1,16 @@
 <?php
+
 namespace SmsaSDK;
 
-use SmsaSDK\Concerns\MapMethods;
-use SmsaSDK\Concerns\ControlWsdl;
 use SmsaSDK\Concerns\Configurable;
-use SmsaSDK\Concerns\ValidateData;
-use SmsaSDK\Concerns\UsesReflection;
+use SmsaSDK\Concerns\ControlWsdl;
+use SmsaSDK\Concerns\MapMethods;
 use SmsaSDK\Concerns\PrepareClient;
-use SmsaSDK\Methods;
+use SmsaSDK\Concerns\UsesReflection;
+use SmsaSDK\Concerns\ValidateData;
 
 /**
- * SmsaManager
+ * SmsaManager.
  */
 class SmsaManager
 {
@@ -30,7 +30,7 @@ class SmsaManager
 
     /**
      * __call
-     * Insert description here
+     * Insert description here.
      *
      * @param $method
      * @param $arguments
@@ -40,9 +40,10 @@ class SmsaManager
     public function __call($method, $arguments)
     {
         $this->setUp();
-        $class = __NAMESPACE__ . "\\Methods\\" . $method;
+        $class = __NAMESPACE__.'\\Methods\\'.$method;
         $arguments = empty($arguments) ? [] : $arguments[0];
         $methodHandler = $this->prepareMethodHandler($arguments, $class);
+
         return $this->client()->$method($methodHandler);
     }
 }

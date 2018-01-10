@@ -4,14 +4,13 @@ namespace SmsaSDK\Methods;
 
 class getTracking
 {
-
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $passkey
+     * @var string
      */
     protected $passkey = null;
 
@@ -35,11 +34,13 @@ class getTracking
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\getTracking
      */
     public function setAwbNo($awbNo)
     {
         $this->awbNo = $awbNo;
+
         return $this;
     }
 
@@ -53,12 +54,13 @@ class getTracking
 
     /**
      * @param string $passkey
+     *
      * @return \SmsaSDK\Methods\getTracking
      */
     public function setPasskey($passkey)
     {
         $this->passkey = $passkey;
+
         return $this;
     }
-
 }

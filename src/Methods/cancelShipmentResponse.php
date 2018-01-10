@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class cancelShipmentResponse
 {
-
     /**
-     * @var string $cancelShipmentResult
+     * @var string
      */
     protected $cancelShipmentResult = null;
 
@@ -28,12 +27,13 @@ class cancelShipmentResponse
 
     /**
      * @param string $cancelShipmentResult
+     *
      * @return \SmsaSDK\Methods\cancelShipmentResponse
      */
     public function setCancelShipmentResult($cancelShipmentResult)
     {
         $this->cancelShipmentResult = $cancelShipmentResult;
+
         return $this;
     }
-
 }

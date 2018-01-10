@@ -1,9 +1,10 @@
 <?php
+
 namespace SmsaSDK;
 
 /**
  * Smsa
- * Smsa Web Services (SECOM) Facade
+ * Smsa Web Services (SECOM) Facade.
  */
 class Smsa
 {
@@ -27,7 +28,8 @@ class Smsa
     public static function setUp($config = [])
     {
         static::handleStaticCalls('setUp', [$config]);
-        return new static;
+
+        return new static();
     }
 
     /**
@@ -39,19 +41,21 @@ class Smsa
     public static function nullValues($value)
     {
         static::handleStaticCalls('nullValues', [$value]);
-        return new static;
+
+        return new static();
     }
 
     /**
      * uri
-     * Set the WSDL uri
-     * 
+     * Set the WSDL uri.
+     *
      * @return static
      */
     public static function uri($uri)
     {
         static::handleStaticCalls('uri', [$uri]);
-        return new static;
+
+        return new static();
     }
 
     /**
@@ -63,7 +67,8 @@ class Smsa
     public static function key($passkey)
     {
         static::handleStaticCalls('key', [$passkey]);
-        return new static;
+
+        return new static();
     }
 
     /**
@@ -73,7 +78,7 @@ class Smsa
      * @param string $method
      * @param array  $arguments
      *
-     * @return 
+     * @return
      */
     public static function __callStatic($method, $arguments)
     {
@@ -81,16 +86,16 @@ class Smsa
     }
 
     /**
-     * handleStaticCalls
+     * handleStaticCalls.
      *
      * @param string $method
      * @param array  $arguments
      *
-     * @return 
+     * @return
      */
     public static function handleStaticCalls($method, $arguments)
     {
-        if(empty(static::$smsaManager)) {
+        if (empty(static::$smsaManager)) {
             static::setManager();
         }
 
