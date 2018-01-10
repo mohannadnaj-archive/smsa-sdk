@@ -2,8 +2,11 @@
 
 Simple PHP package for integrating SMSA Web Services (SECOM).
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/mohannadnaj/smsa-sdk.svg?style=flat-square)](https://packagist.org/packages/mohannadnaj/smsa-sdk)
 [![Total Downloads](https://poser.pugx.org/mohannadnaj/smsa-sdk/downloads)](https://packagist.org/packages/mohannadnaj/smsa-sdk)
 [![Build Status](https://travis-ci.org/MohannadNaj/smsa-sdk.svg?branch=master)](https://travis-ci.org/MohannadNaj/smsa-sdk)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/MohannadNaj/smsa-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/MohannadNaj/smsa-sdk/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/MohannadNaj/smsa-sdk/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/MohannadNaj/smsa-sdk/?branch=master)
 
 ## Installation
 Include the package via [composer](https://getcomposer.org/) :
