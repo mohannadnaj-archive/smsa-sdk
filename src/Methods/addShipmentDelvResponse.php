@@ -4,8 +4,9 @@ namespace SmsaSDK\Methods;
 
 class addShipmentDelvResponse
 {
+
     /**
-     * @var string
+     * @var string $addShipmentDelvResult
      */
     protected $addShipmentDelvResult = null;
 
@@ -14,7 +15,7 @@ class addShipmentDelvResponse
      */
     public function __construct($addShipmentDelvResult = null)
     {
-        $this->addShipmentDelvResult = $addShipmentDelvResult;
+      $this->addShipmentDelvResult = $addShipmentDelvResult;
     }
 
     /**
@@ -22,18 +23,17 @@ class addShipmentDelvResponse
      */
     public function getAddShipmentDelvResult()
     {
-        return $this->addShipmentDelvResult;
+      return $this->addShipmentDelvResult;
     }
 
     /**
      * @param string $addShipmentDelvResult
-     *
      * @return \SmsaSDK\Methods\addShipmentDelvResponse
      */
     public function setAddShipmentDelvResult($addShipmentDelvResult)
     {
-        $this->addShipmentDelvResult = $addShipmentDelvResult;
-
-        return $this;
+      $this->addShipmentDelvResult = $addShipmentDelvResult;
+      return $this;
     }
+
 }

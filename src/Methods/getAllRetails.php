@@ -4,8 +4,9 @@ namespace SmsaSDK\Methods;
 
 class getAllRetails
 {
+
     /**
-     * @var string
+     * @var string $passkey
      */
     protected $passkey = null;
 
@@ -14,7 +15,7 @@ class getAllRetails
      */
     public function __construct($passkey = null)
     {
-        $this->passkey = $passkey;
+      $this->passkey = $passkey;
     }
 
     /**
@@ -22,18 +23,17 @@ class getAllRetails
      */
     public function getPasskey()
     {
-        return $this->passkey;
+      return $this->passkey;
     }
 
     /**
      * @param string $passkey
-     *
      * @return \SmsaSDK\Methods\getAllRetails
      */
     public function setPasskey($passkey)
     {
-        $this->passkey = $passkey;
-
-        return $this;
+      $this->passkey = $passkey;
+      return $this;
     }
+
 }

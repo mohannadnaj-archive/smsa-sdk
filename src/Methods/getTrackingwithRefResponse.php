@@ -4,8 +4,9 @@ namespace SmsaSDK\Methods;
 
 class getTrackingwithRefResponse
 {
+
     /**
-     * @var getTrackingwithRefResult
+     * @var getTrackingwithRefResult $getTrackingwithRefResult
      */
     protected $getTrackingwithRefResult = null;
 
@@ -14,7 +15,7 @@ class getTrackingwithRefResponse
      */
     public function __construct($getTrackingwithRefResult = null)
     {
-        $this->getTrackingwithRefResult = $getTrackingwithRefResult;
+      $this->getTrackingwithRefResult = $getTrackingwithRefResult;
     }
 
     /**
@@ -22,18 +23,17 @@ class getTrackingwithRefResponse
      */
     public function getGetTrackingwithRefResult()
     {
-        return $this->getTrackingwithRefResult;
+      return $this->getTrackingwithRefResult;
     }
 
     /**
      * @param getTrackingwithRefResult $getTrackingwithRefResult
-     *
      * @return \SmsaSDK\Methods\getTrackingwithRefResponse
      */
     public function setGetTrackingwithRefResult($getTrackingwithRefResult)
     {
-        $this->getTrackingwithRefResult = $getTrackingwithRefResult;
-
-        return $this;
+      $this->getTrackingwithRefResult = $getTrackingwithRefResult;
+      return $this;
     }
+
 }

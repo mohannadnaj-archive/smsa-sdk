@@ -4,13 +4,14 @@ namespace SmsaSDK\Methods;
 
 class getRTLRetails
 {
+
     /**
-     * @var string
+     * @var string $cityCode
      */
     protected $cityCode = null;
 
     /**
-     * @var string
+     * @var string $passkey
      */
     protected $passkey = null;
 
@@ -20,8 +21,8 @@ class getRTLRetails
      */
     public function __construct($cityCode = null, $passkey = null)
     {
-        $this->cityCode = $cityCode;
-        $this->passkey = $passkey;
+      $this->cityCode = $cityCode;
+      $this->passkey = $passkey;
     }
 
     /**
@@ -29,19 +30,17 @@ class getRTLRetails
      */
     public function getCityCode()
     {
-        return $this->cityCode;
+      return $this->cityCode;
     }
 
     /**
      * @param string $cityCode
-     *
      * @return \SmsaSDK\Methods\getRTLRetails
      */
     public function setCityCode($cityCode)
     {
-        $this->cityCode = $cityCode;
-
-        return $this;
+      $this->cityCode = $cityCode;
+      return $this;
     }
 
     /**
@@ -49,18 +48,17 @@ class getRTLRetails
      */
     public function getPasskey()
     {
-        return $this->passkey;
+      return $this->passkey;
     }
 
     /**
      * @param string $passkey
-     *
      * @return \SmsaSDK\Methods\getRTLRetails
      */
     public function setPasskey($passkey)
     {
-        $this->passkey = $passkey;
-
-        return $this;
+      $this->passkey = $passkey;
+      return $this;
     }
+
 }

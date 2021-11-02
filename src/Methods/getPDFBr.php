@@ -4,18 +4,19 @@ namespace SmsaSDK\Methods;
 
 class getPDFBr
 {
+
     /**
-     * @var string
+     * @var string $awbNo
      */
     protected $awbNo = null;
 
     /**
-     * @var string
+     * @var string $passKey
      */
     protected $passKey = null;
 
     /**
-     * @var string
+     * @var string $forwrdr
      */
     protected $forwrdr = null;
 
@@ -26,9 +27,9 @@ class getPDFBr
      */
     public function __construct($awbNo = null, $passKey = null, $forwrdr = null)
     {
-        $this->awbNo = $awbNo;
-        $this->passKey = $passKey;
-        $this->forwrdr = $forwrdr;
+      $this->awbNo = $awbNo;
+      $this->passKey = $passKey;
+      $this->forwrdr = $forwrdr;
     }
 
     /**
@@ -36,19 +37,17 @@ class getPDFBr
      */
     public function getAwbNo()
     {
-        return $this->awbNo;
+      return $this->awbNo;
     }
 
     /**
      * @param string $awbNo
-     *
      * @return \SmsaSDK\Methods\getPDFBr
      */
     public function setAwbNo($awbNo)
     {
-        $this->awbNo = $awbNo;
-
-        return $this;
+      $this->awbNo = $awbNo;
+      return $this;
     }
 
     /**
@@ -56,19 +55,17 @@ class getPDFBr
      */
     public function getPassKey()
     {
-        return $this->passKey;
+      return $this->passKey;
     }
 
     /**
      * @param string $passKey
-     *
      * @return \SmsaSDK\Methods\getPDFBr
      */
     public function setPassKey($passKey)
     {
-        $this->passKey = $passKey;
-
-        return $this;
+      $this->passKey = $passKey;
+      return $this;
     }
 
     /**
@@ -76,18 +73,17 @@ class getPDFBr
      */
     public function getForwrdr()
     {
-        return $this->forwrdr;
+      return $this->forwrdr;
     }
 
     /**
      * @param string $forwrdr
-     *
      * @return \SmsaSDK\Methods\getPDFBr
      */
     public function setForwrdr($forwrdr)
     {
-        $this->forwrdr = $forwrdr;
-
-        return $this;
+      $this->forwrdr = $forwrdr;
+      return $this;
     }
+
 }

@@ -4,24 +4,25 @@ namespace SmsaSDK\Methods;
 
 class getShipUpdates
 {
+
     /**
-     * @var int
+     * @var int $rowId
      */
     protected $rowId = null;
 
     /**
-     * @var string
+     * @var string $passKey
      */
     protected $passKey = null;
 
     /**
-     * @param int    $rowId
+     * @param int $rowId
      * @param string $passKey
      */
     public function __construct($rowId = null, $passKey = null)
     {
-        $this->rowId = $rowId;
-        $this->passKey = $passKey;
+      $this->rowId = $rowId;
+      $this->passKey = $passKey;
     }
 
     /**
@@ -29,19 +30,17 @@ class getShipUpdates
      */
     public function getRowId()
     {
-        return $this->rowId;
+      return $this->rowId;
     }
 
     /**
      * @param int $rowId
-     *
      * @return \SmsaSDK\Methods\getShipUpdates
      */
     public function setRowId($rowId)
     {
-        $this->rowId = $rowId;
-
-        return $this;
+      $this->rowId = $rowId;
+      return $this;
     }
 
     /**
@@ -49,18 +48,17 @@ class getShipUpdates
      */
     public function getPassKey()
     {
-        return $this->passKey;
+      return $this->passKey;
     }
 
     /**
      * @param string $passKey
-     *
      * @return \SmsaSDK\Methods\getShipUpdates
      */
     public function setPassKey($passKey)
     {
-        $this->passKey = $passKey;
-
-        return $this;
+      $this->passKey = $passKey;
+      return $this;
     }
+
 }

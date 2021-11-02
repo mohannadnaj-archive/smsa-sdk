@@ -4,31 +4,32 @@ namespace SmsaSDK\Methods;
 
 class saphOrderReady
 {
+
     /**
-     * @var string
+     * @var string $passKey
      */
     protected $passKey = null;
 
     /**
-     * @var string
+     * @var string $refId
      */
     protected $refId = null;
 
     /**
-     * @var ArrayOfOrderLineItem
+     * @var ArrayOfOrderLineItem $orderLineItems
      */
     protected $orderLineItems = null;
 
     /**
-     * @param string               $passKey
-     * @param string               $refId
+     * @param string $passKey
+     * @param string $refId
      * @param ArrayOfOrderLineItem $orderLineItems
      */
     public function __construct($passKey = null, $refId = null, $orderLineItems = null)
     {
-        $this->passKey = $passKey;
-        $this->refId = $refId;
-        $this->orderLineItems = $orderLineItems;
+      $this->passKey = $passKey;
+      $this->refId = $refId;
+      $this->orderLineItems = $orderLineItems;
     }
 
     /**
@@ -36,19 +37,17 @@ class saphOrderReady
      */
     public function getPassKey()
     {
-        return $this->passKey;
+      return $this->passKey;
     }
 
     /**
      * @param string $passKey
-     *
      * @return \SmsaSDK\Methods\saphOrderReady
      */
     public function setPassKey($passKey)
     {
-        $this->passKey = $passKey;
-
-        return $this;
+      $this->passKey = $passKey;
+      return $this;
     }
 
     /**
@@ -56,19 +55,17 @@ class saphOrderReady
      */
     public function getRefId()
     {
-        return $this->refId;
+      return $this->refId;
     }
 
     /**
      * @param string $refId
-     *
      * @return \SmsaSDK\Methods\saphOrderReady
      */
     public function setRefId($refId)
     {
-        $this->refId = $refId;
-
-        return $this;
+      $this->refId = $refId;
+      return $this;
     }
 
     /**
@@ -76,18 +73,17 @@ class saphOrderReady
      */
     public function getOrderLineItems()
     {
-        return $this->orderLineItems;
+      return $this->orderLineItems;
     }
 
     /**
      * @param ArrayOfOrderLineItem $orderLineItems
-     *
      * @return \SmsaSDK\Methods\saphOrderReady
      */
     public function setOrderLineItems($orderLineItems)
     {
-        $this->orderLineItems = $orderLineItems;
-
-        return $this;
+      $this->orderLineItems = $orderLineItems;
+      return $this;
     }
+
 }

@@ -4,13 +4,14 @@ namespace SmsaSDK\Methods;
 
 class getStatusByRef
 {
+
     /**
-     * @var string
+     * @var string $refNo
      */
     protected $refNo = null;
 
     /**
-     * @var string
+     * @var string $passkey
      */
     protected $passkey = null;
 
@@ -20,8 +21,8 @@ class getStatusByRef
      */
     public function __construct($refNo = null, $passkey = null)
     {
-        $this->refNo = $refNo;
-        $this->passkey = $passkey;
+      $this->refNo = $refNo;
+      $this->passkey = $passkey;
     }
 
     /**
@@ -29,19 +30,17 @@ class getStatusByRef
      */
     public function getRefNo()
     {
-        return $this->refNo;
+      return $this->refNo;
     }
 
     /**
      * @param string $refNo
-     *
      * @return \SmsaSDK\Methods\getStatusByRef
      */
     public function setRefNo($refNo)
     {
-        $this->refNo = $refNo;
-
-        return $this;
+      $this->refNo = $refNo;
+      return $this;
     }
 
     /**
@@ -49,18 +48,17 @@ class getStatusByRef
      */
     public function getPasskey()
     {
-        return $this->passkey;
+      return $this->passkey;
     }
 
     /**
      * @param string $passkey
-     *
      * @return \SmsaSDK\Methods\getStatusByRef
      */
     public function setPasskey($passkey)
     {
-        $this->passkey = $passkey;
-
-        return $this;
+      $this->passkey = $passkey;
+      return $this;
     }
+
 }

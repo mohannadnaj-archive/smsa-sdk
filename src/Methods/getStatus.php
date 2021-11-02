@@ -4,13 +4,14 @@ namespace SmsaSDK\Methods;
 
 class getStatus
 {
+
     /**
-     * @var string
+     * @var string $awbNo
      */
     protected $awbNo = null;
 
     /**
-     * @var string
+     * @var string $passkey
      */
     protected $passkey = null;
 
@@ -20,8 +21,8 @@ class getStatus
      */
     public function __construct($awbNo = null, $passkey = null)
     {
-        $this->awbNo = $awbNo;
-        $this->passkey = $passkey;
+      $this->awbNo = $awbNo;
+      $this->passkey = $passkey;
     }
 
     /**
@@ -29,19 +30,17 @@ class getStatus
      */
     public function getAwbNo()
     {
-        return $this->awbNo;
+      return $this->awbNo;
     }
 
     /**
      * @param string $awbNo
-     *
      * @return \SmsaSDK\Methods\getStatus
      */
     public function setAwbNo($awbNo)
     {
-        $this->awbNo = $awbNo;
-
-        return $this;
+      $this->awbNo = $awbNo;
+      return $this;
     }
 
     /**
@@ -49,18 +48,17 @@ class getStatus
      */
     public function getPasskey()
     {
-        return $this->passkey;
+      return $this->passkey;
     }
 
     /**
      * @param string $passkey
-     *
      * @return \SmsaSDK\Methods\getStatus
      */
     public function setPasskey($passkey)
     {
-        $this->passkey = $passkey;
-
-        return $this;
+      $this->passkey = $passkey;
+      return $this;
     }
+
 }

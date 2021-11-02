@@ -138,6 +138,62 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="addShipPDF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="refNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sentDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cntry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cZip" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cPOBox" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cMobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cTel1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cTel2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cAddr1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cAddr2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PCs" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="carrValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="carrCurr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="weight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="custVal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="custCurr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="insrAmt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="insrCurr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="itemDesc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sContact" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAddr1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAddr2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPhone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCntry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prefDelvDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gpsPoints" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vatValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="harmCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addShipPDFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addShipPDFResult" type="tns:addShipPDFResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="addShipPDFResp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Response" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="aPDF" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="stoShipment">
         <s:complexType>
           <s:sequence>
@@ -340,6 +396,77 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="getTrack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="awbNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passkey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTrackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTrackResult" type="tns:getTrackResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="getTrackResp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackDetailsList" type="tns:ArrayOfTrackDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTrackDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TrackDetails" nillable="true" type="tns:TrackDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TrackDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="awbNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="evtDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Activity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Details" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getShipmentUpdates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rowId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="passKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipmentUpdatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getShipmentUpdatesResult" type="tns:getShipmentUpdatesResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="getShipmentUpdatesResp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShipUpdatesList" type="tns:ArrayOfShipUpdates" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfShipUpdates">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ShipUpdates" nillable="true" type="tns:ShipUpdates" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ShipUpdates">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="rowId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="awbNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="evtDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Activity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Details" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+        </s:sequence>
+      </s:complexType>
       <s:element name="cancelShipment">
         <s:complexType>
           <s:sequence>
@@ -420,6 +547,49 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="getRTLRetailsTiming">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passkey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getRTLRetailsTimingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getRTLRetailsTimingResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllRetailsTiming">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passkey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAllRetailsTimingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAllRetailsTimingResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="getPDF">
         <s:complexType>
           <s:sequence>
@@ -466,6 +636,74 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="getDeliveredShipments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDeliveredShipmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDeliveredShipmentsResult" type="tns:DeliveredShipmentResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DeliveredShipmentResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackingDetailsList" type="tns:ArrayOfDeliveredShipmentDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDeliveredShipmentDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DeliveredShipmentDetails" nillable="true" type="tns:DeliveredShipmentDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DeliveredShipmentDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="awbNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="refNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="shipDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="delvTo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="delvDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cMobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codAmt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="itemDesc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getShipCharges">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="passKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipCntry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="destCity" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="destCntry" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shipType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codAmt" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="weight" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getShipChargesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getShipChargesResult" type="tns:getShipChargesResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="getShipChargesResp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShipCharges" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShipChargesCurr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="addShipmentSoapIn">
@@ -485,6 +723,12 @@
   </wsdl:message>
   <wsdl:message name="addShipMPSSoapOut">
     <wsdl:part name="parameters" element="tns:addShipMPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="addShipPDFSoapIn">
+    <wsdl:part name="parameters" element="tns:addShipPDF" />
+  </wsdl:message>
+  <wsdl:message name="addShipPDFSoapOut">
+    <wsdl:part name="parameters" element="tns:addShipPDFResponse" />
   </wsdl:message>
   <wsdl:message name="stoShipmentSoapIn">
     <wsdl:part name="parameters" element="tns:stoShipment" />
@@ -540,6 +784,18 @@
   <wsdl:message name="getShipUpdatesSoapOut">
     <wsdl:part name="parameters" element="tns:getShipUpdatesResponse" />
   </wsdl:message>
+  <wsdl:message name="getTrackSoapIn">
+    <wsdl:part name="parameters" element="tns:getTrack" />
+  </wsdl:message>
+  <wsdl:message name="getTrackSoapOut">
+    <wsdl:part name="parameters" element="tns:getTrackResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentUpdatesSoapIn">
+    <wsdl:part name="parameters" element="tns:getShipmentUpdates" />
+  </wsdl:message>
+  <wsdl:message name="getShipmentUpdatesSoapOut">
+    <wsdl:part name="parameters" element="tns:getShipmentUpdatesResponse" />
+  </wsdl:message>
   <wsdl:message name="cancelShipmentSoapIn">
     <wsdl:part name="parameters" element="tns:cancelShipment" />
   </wsdl:message>
@@ -564,6 +820,18 @@
   <wsdl:message name="getAllRetailsSoapOut">
     <wsdl:part name="parameters" element="tns:getAllRetailsResponse" />
   </wsdl:message>
+  <wsdl:message name="getRTLRetailsTimingSoapIn">
+    <wsdl:part name="parameters" element="tns:getRTLRetailsTiming" />
+  </wsdl:message>
+  <wsdl:message name="getRTLRetailsTimingSoapOut">
+    <wsdl:part name="parameters" element="tns:getRTLRetailsTimingResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllRetailsTimingSoapIn">
+    <wsdl:part name="parameters" element="tns:getAllRetailsTiming" />
+  </wsdl:message>
+  <wsdl:message name="getAllRetailsTimingSoapOut">
+    <wsdl:part name="parameters" element="tns:getAllRetailsTimingResponse" />
+  </wsdl:message>
   <wsdl:message name="getPDFSoapIn">
     <wsdl:part name="parameters" element="tns:getPDF" />
   </wsdl:message>
@@ -582,6 +850,18 @@
   <wsdl:message name="getPDFBrSoapOut">
     <wsdl:part name="parameters" element="tns:getPDFBrResponse" />
   </wsdl:message>
+  <wsdl:message name="getDeliveredShipmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:getDeliveredShipments" />
+  </wsdl:message>
+  <wsdl:message name="getDeliveredShipmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:getDeliveredShipmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getShipChargesSoapIn">
+    <wsdl:part name="parameters" element="tns:getShipCharges" />
+  </wsdl:message>
+  <wsdl:message name="getShipChargesSoapOut">
+    <wsdl:part name="parameters" element="tns:getShipChargesResponse" />
+  </wsdl:message>
   <wsdl:portType name="SMSAWebServiceSoap">
     <wsdl:operation name="addShipment">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create Shipment and get SMSA AWB Number</wsdl:documentation>
@@ -597,6 +877,11 @@
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create Shipment with Shipper Details and get SMSA AWB Number for Multi piece Shipments</wsdl:documentation>
       <wsdl:input message="tns:addShipMPSSoapIn" />
       <wsdl:output message="tns:addShipMPSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addShipPDF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Create Shipment with Shipper Details and get SMSA AWB Number with PDF Label</wsdl:documentation>
+      <wsdl:input message="tns:addShipPDFSoapIn" />
+      <wsdl:output message="tns:addShipPDFSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="stoShipment">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Ship to Origin after Delivery</wsdl:documentation>
@@ -642,6 +927,16 @@
       <wsdl:input message="tns:getShipUpdatesSoapIn" />
       <wsdl:output message="tns:getShipUpdatesSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="getTrack">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Tracking of Shipment by Air waybill Number</wsdl:documentation>
+      <wsdl:input message="tns:getTrackSoapIn" />
+      <wsdl:output message="tns:getTrackSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentUpdates">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get All the Shipment Updates for the customer shipments</wsdl:documentation>
+      <wsdl:input message="tns:getShipmentUpdatesSoapIn" />
+      <wsdl:output message="tns:getShipmentUpdatesSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="cancelShipment">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Cancel a Shipment by Air waybill Number</wsdl:documentation>
       <wsdl:input message="tns:cancelShipmentSoapIn" />
@@ -662,6 +957,16 @@
       <wsdl:input message="tns:getAllRetailsSoapIn" />
       <wsdl:output message="tns:getAllRetailsSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="getRTLRetailsTiming">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Retails list by each city with Working Hours</wsdl:documentation>
+      <wsdl:input message="tns:getRTLRetailsTimingSoapIn" />
+      <wsdl:output message="tns:getRTLRetailsTimingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllRetailsTiming">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Retails list by each city with Working Hours</wsdl:documentation>
+      <wsdl:input message="tns:getAllRetailsTimingSoapIn" />
+      <wsdl:output message="tns:getAllRetailsTimingSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="getPDF">
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get AWB Print in PDF</wsdl:documentation>
       <wsdl:input message="tns:getPDFSoapIn" />
@@ -676,6 +981,16 @@
       <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get AWB Print in PDF</wsdl:documentation>
       <wsdl:input message="tns:getPDFBrSoapIn" />
       <wsdl:output message="tns:getPDFBrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDeliveredShipments">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Delivered Shipment details during the mentioned dates</wsdl:documentation>
+      <wsdl:input message="tns:getDeliveredShipmentsSoapIn" />
+      <wsdl:output message="tns:getDeliveredShipmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getShipCharges">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Shipment Charges</wsdl:documentation>
+      <wsdl:input message="tns:getShipChargesSoapIn" />
+      <wsdl:output message="tns:getShipChargesSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="SMSAWebServiceSoap" type="tns:SMSAWebServiceSoap">
@@ -700,6 +1015,15 @@
     </wsdl:operation>
     <wsdl:operation name="addShipMPS">
       <soap:operation soapAction="http://track.smsaexpress.com/secom/addShipMPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addShipPDF">
+      <soap:operation soapAction="http://track.smsaexpress.com/secom/addShipPDF" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -788,6 +1112,24 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getTrack">
+      <soap:operation soapAction="http://track.smsaexpress.com/secom/getTrack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentUpdates">
+      <soap:operation soapAction="http://track.smsaexpress.com/secom/getShipmentUpdates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="cancelShipment">
       <soap:operation soapAction="http://track.smsaexpress.com/secom/cancelShipment" style="document" />
       <wsdl:input>
@@ -824,6 +1166,24 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getRTLRetailsTiming">
+      <soap:operation soapAction="http://track.smsaexpress.com/secom/getRTLRetailsTiming" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRetailsTiming">
+      <soap:operation soapAction="http://track.smsaexpress.com/secom/getAllRetailsTiming" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getPDF">
       <soap:operation soapAction="http://track.smsaexpress.com/secom/getPDF" style="document" />
       <wsdl:input>
@@ -844,6 +1204,24 @@
     </wsdl:operation>
     <wsdl:operation name="getPDFBr">
       <soap:operation soapAction="http://track.smsaexpress.com/secom/getPDFBr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeliveredShipments">
+      <soap:operation soapAction="http://track.smsaexpress.com/secom/getDeliveredShipments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipCharges">
+      <soap:operation soapAction="http://track.smsaexpress.com/secom/getShipCharges" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -874,6 +1252,15 @@
     </wsdl:operation>
     <wsdl:operation name="addShipMPS">
       <soap12:operation soapAction="http://track.smsaexpress.com/secom/addShipMPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addShipPDF">
+      <soap12:operation soapAction="http://track.smsaexpress.com/secom/addShipPDF" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -962,6 +1349,24 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getTrack">
+      <soap12:operation soapAction="http://track.smsaexpress.com/secom/getTrack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipmentUpdates">
+      <soap12:operation soapAction="http://track.smsaexpress.com/secom/getShipmentUpdates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="cancelShipment">
       <soap12:operation soapAction="http://track.smsaexpress.com/secom/cancelShipment" style="document" />
       <wsdl:input>
@@ -998,6 +1403,24 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getRTLRetailsTiming">
+      <soap12:operation soapAction="http://track.smsaexpress.com/secom/getRTLRetailsTiming" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRetailsTiming">
+      <soap12:operation soapAction="http://track.smsaexpress.com/secom/getAllRetailsTiming" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="getPDF">
       <soap12:operation soapAction="http://track.smsaexpress.com/secom/getPDF" style="document" />
       <wsdl:input>
@@ -1018,6 +1441,24 @@
     </wsdl:operation>
     <wsdl:operation name="getPDFBr">
       <soap12:operation soapAction="http://track.smsaexpress.com/secom/getPDFBr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeliveredShipments">
+      <soap12:operation soapAction="http://track.smsaexpress.com/secom/getDeliveredShipments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShipCharges">
+      <soap12:operation soapAction="http://track.smsaexpress.com/secom/getShipCharges" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

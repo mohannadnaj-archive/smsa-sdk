@@ -4,8 +4,9 @@ namespace SmsaSDK\Methods;
 
 class getStatusResponse
 {
+
     /**
-     * @var string
+     * @var string $getStatusResult
      */
     protected $getStatusResult = null;
 
@@ -14,7 +15,7 @@ class getStatusResponse
      */
     public function __construct($getStatusResult = null)
     {
-        $this->getStatusResult = $getStatusResult;
+      $this->getStatusResult = $getStatusResult;
     }
 
     /**
@@ -22,18 +23,17 @@ class getStatusResponse
      */
     public function getGetStatusResult()
     {
-        return $this->getStatusResult;
+      return $this->getStatusResult;
     }
 
     /**
      * @param string $getStatusResult
-     *
      * @return \SmsaSDK\Methods\getStatusResponse
      */
     public function setGetStatusResult($getStatusResult)
     {
-        $this->getStatusResult = $getStatusResult;
-
-        return $this;
+      $this->getStatusResult = $getStatusResult;
+      return $this;
     }
+
 }

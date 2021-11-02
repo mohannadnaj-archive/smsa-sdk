@@ -4,8 +4,9 @@ namespace SmsaSDK\Methods;
 
 class getAllRetailsResponse
 {
+
     /**
-     * @var getAllRetailsResult
+     * @var getAllRetailsResult $getAllRetailsResult
      */
     protected $getAllRetailsResult = null;
 
@@ -14,7 +15,7 @@ class getAllRetailsResponse
      */
     public function __construct($getAllRetailsResult = null)
     {
-        $this->getAllRetailsResult = $getAllRetailsResult;
+      $this->getAllRetailsResult = $getAllRetailsResult;
     }
 
     /**
@@ -22,18 +23,17 @@ class getAllRetailsResponse
      */
     public function getGetAllRetailsResult()
     {
-        return $this->getAllRetailsResult;
+      return $this->getAllRetailsResult;
     }
 
     /**
      * @param getAllRetailsResult $getAllRetailsResult
-     *
      * @return \SmsaSDK\Methods\getAllRetailsResponse
      */
     public function setGetAllRetailsResult($getAllRetailsResult)
     {
-        $this->getAllRetailsResult = $getAllRetailsResult;
-
-        return $this;
+      $this->getAllRetailsResult = $getAllRetailsResult;
+      return $this;
     }
+
 }

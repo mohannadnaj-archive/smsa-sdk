@@ -4,8 +4,9 @@ namespace SmsaSDK\Methods;
 
 class getPDFBrResponse
 {
+
     /**
-     * @var base64Binary
+     * @var base64Binary $getPDFBrResult
      */
     protected $getPDFBrResult = null;
 
@@ -14,7 +15,7 @@ class getPDFBrResponse
      */
     public function __construct($getPDFBrResult = null)
     {
-        $this->getPDFBrResult = $getPDFBrResult;
+      $this->getPDFBrResult = $getPDFBrResult;
     }
 
     /**
@@ -22,18 +23,17 @@ class getPDFBrResponse
      */
     public function getGetPDFBrResult()
     {
-        return $this->getPDFBrResult;
+      return $this->getPDFBrResult;
     }
 
     /**
      * @param base64Binary $getPDFBrResult
-     *
      * @return \SmsaSDK\Methods\getPDFBrResponse
      */
     public function setGetPDFBrResult($getPDFBrResult)
     {
-        $this->getPDFBrResult = $getPDFBrResult;
-
-        return $this;
+      $this->getPDFBrResult = $getPDFBrResult;
+      return $this;
     }
+
 }
