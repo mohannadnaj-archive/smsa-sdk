@@ -2,11 +2,11 @@
     "RetailCities": [
         {
             "routCode": "ABT",
-            "rCity": "Aqiq"
+            "rCity": "Al Aqiq"
         },
         {
             "routCode": "ABT",
-            "rCity": "Baha"
+            "rCity": "Al Baha"
         },
         {
             "routCode": "ABT",
@@ -22,15 +22,11 @@
         },
         {
             "routCode": "ABT",
-            "rCity": "Namerah"
+            "rCity": "Namera"
         },
         {
             "routCode": "ABT",
             "rCity": "Qilwah"
-        },
-        {
-            "routCode": "ABT",
-            "rCity": "Qunfudhah"
         },
         {
             "routCode": "AJF",
@@ -38,19 +34,39 @@
         },
         {
             "routCode": "AJF",
-            "rCity": "Skakah"
+            "rCity": "Skaka"
+        },
+        {
+            "routCode": "AKJ",
+            "rCity": "Aflaj"
+        },
+        {
+            "routCode": "AKJ",
+            "rCity": "Al Hariq"
+        },
+        {
+            "routCode": "AKJ",
+            "rCity": "Al Kharj"
+        },
+        {
+            "routCode": "AKJ",
+            "rCity": "Dilam"
         },
         {
             "routCode": "ANS",
-            "rCity": "Namas"
+            "rCity": "An Namas"
         },
         {
             "routCode": "ANS",
-            "rCity": "Sabt Al Alaya"
+            "rCity": "Sabt Al Alaya (Balqarn)"
         },
         {
             "routCode": "ANS",
             "rCity": "Tanumah"
+        },
+        {
+            "routCode": "DMM",
+            "rCity": "Al Khubar"
         },
         {
             "routCode": "DMM",
@@ -66,7 +82,7 @@
         },
         {
             "routCode": "DMM",
-            "rCity": "Jubail"
+            "rCity": "Dhahran"
         },
         {
             "routCode": "DMM",
@@ -74,23 +90,11 @@
         },
         {
             "routCode": "DMM",
-            "rCity": "Khobar"
-        },
-        {
-            "routCode": "DMM",
-            "rCity": "Nairiyah"
-        },
-        {
-            "routCode": "DMM",
-            "rCity": "Qarya Ulya "
-        },
-        {
-            "routCode": "DMM",
             "rCity": "Qatif"
         },
         {
             "routCode": "DMM",
-            "rCity": "Ras Tannurah"
+            "rCity": "Rahima (Ras Tannurah)"
         },
         {
             "routCode": "DMM",
@@ -101,8 +105,16 @@
             "rCity": "Sayhat"
         },
         {
+            "routCode": "DWD",
+            "rCity": "Afif"
+        },
+        {
+            "routCode": "DWD",
+            "rCity": "Bijadiyah"
+        },
+        {
             "routCode": "EAM",
-            "rCity": "Habona"
+            "rCity": "Habuna"
         },
         {
             "routCode": "EAM",
@@ -110,7 +122,19 @@
         },
         {
             "routCode": "EAM",
-            "rCity": "Sharourah"
+            "rCity": "Sharurah"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Ar Rass"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Ash Shimasiyah"
+        },
+        {
+            "routCode": "ELQ",
+            "rCity": "Asiyah"
         },
         {
             "routCode": "ELQ",
@@ -118,11 +142,11 @@
         },
         {
             "routCode": "ELQ",
-            "rCity": "Bikeryah"
+            "rCity": "Bukayriyah"
         },
         {
             "routCode": "ELQ",
-            "rCity": "Buraydah"
+            "rCity": "Burydah"
         },
         {
             "routCode": "ELQ",
@@ -130,11 +154,7 @@
         },
         {
             "routCode": "ELQ",
-            "rCity": "Rafaya AlGimsh"
-        },
-        {
-            "routCode": "ELQ",
-            "rCity": "Rass"
+            "rCity": "Rafai Al Jimsh"
         },
         {
             "routCode": "ELQ",
@@ -146,11 +166,15 @@
         },
         {
             "routCode": "ELQ",
+            "rCity": "Uglat Assugour"
+        },
+        {
+            "routCode": "ELQ",
             "rCity": "Unayzah"
         },
         {
             "routCode": "ELQ",
-            "rCity": "Uyun Al Jiwa"
+            "rCity": "Uyun Al Juwa"
         },
         {
             "routCode": "GIZ",
@@ -158,15 +182,19 @@
         },
         {
             "routCode": "GIZ",
-            "rCity": "Ahad Al Masarhah"
+            "rCity": "Ad Darb"
         },
         {
             "routCode": "GIZ",
-            "rCity": "Alardhah"
+            "rCity": "Ahad Masarihah"
         },
         {
             "routCode": "GIZ",
-            "rCity": "At Tuwal"
+            "rCity": "Al Dayer"
+        },
+        {
+            "routCode": "GIZ",
+            "rCity": "Ardah"
         },
         {
             "routCode": "GIZ",
@@ -174,15 +202,15 @@
         },
         {
             "routCode": "GIZ",
-            "rCity": "Darb"
+            "rCity": "Damad"
         },
         {
             "routCode": "GIZ",
-            "rCity": "Dayer"
+            "rCity": "Edabi"
         },
         {
             "routCode": "GIZ",
-            "rCity": "Gizan"
+            "rCity": "Jazan"
         },
         {
             "routCode": "GIZ",
@@ -193,8 +221,12 @@
             "rCity": "Samtah"
         },
         {
-            "routCode": "GIZ",
-            "rCity": "Wadi Hali"
+            "routCode": "HAS",
+            "rCity": "Ash Shamli"
+        },
+        {
+            "routCode": "HAS",
+            "rCity": "Baqaa"
         },
         {
             "routCode": "HAS",
@@ -206,11 +238,39 @@
         },
         {
             "routCode": "HBT",
+            "rCity": "King Khalid Military City"
+        },
+        {
+            "routCode": "HBT",
             "rCity": "Rafha"
         },
         {
             "routCode": "HOF",
             "rCity": "Hufuf"
+        },
+        {
+            "routCode": "HOF",
+            "rCity": "Oyoun"
+        },
+        {
+            "routCode": "JBL",
+            "rCity": "An Nairiyah"
+        },
+        {
+            "routCode": "JBL",
+            "rCity": "Jubail"
+        },
+        {
+            "routCode": "JBL",
+            "rCity": "Qaryat Al Ulya"
+        },
+        {
+            "routCode": "JBL",
+            "rCity": "Sarrar"
+        },
+        {
+            "routCode": "JED",
+            "rCity": "Al Lith"
         },
         {
             "routCode": "JED",
@@ -222,11 +282,11 @@
         },
         {
             "routCode": "JED",
-            "rCity": "Lith"
+            "rCity": "Rabeigh"
         },
         {
             "routCode": "JED",
-            "rCity": "Rabigh"
+            "rCity": "Thuwal"
         },
         {
             "routCode": "KMT",
@@ -238,11 +298,15 @@
         },
         {
             "routCode": "KMT",
+            "rCity": "Bariq"
+        },
+        {
+            "routCode": "KMT",
             "rCity": "Bishah"
         },
         {
             "routCode": "KMT",
-            "rCity": "Dhahran Aljanoub"
+            "rCity": "Dhahran Al Janoub"
         },
         {
             "routCode": "KMT",
@@ -258,11 +322,11 @@
         },
         {
             "routCode": "KMT",
-            "rCity": "Rijal Alma"
+            "rCity": "Rijal Almeaa"
         },
         {
             "routCode": "KMT",
-            "rCity": "Sarat Abida"
+            "rCity": "Sarat Abidah"
         },
         {
             "routCode": "KMT",
@@ -270,11 +334,19 @@
         },
         {
             "routCode": "KMT",
-            "rCity": "Tathleeth"
+            "rCity": "Tathlith"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Wadeen"
+        },
+        {
+            "routCode": "KMT",
+            "rCity": "Wadi Ibn Hashbal"
         },
         {
             "routCode": "MAK",
-            "rCity": "Jamoum"
+            "rCity": "Jumum"
         },
         {
             "routCode": "MAK",
@@ -282,11 +354,15 @@
         },
         {
             "routCode": "MED",
+            "rCity": "Al Ula"
+        },
+        {
+            "routCode": "MED",
             "rCity": "Hanakiyah"
         },
         {
             "routCode": "MED",
-            "rCity": "Khayber"
+            "rCity": "Khaybar"
         },
         {
             "routCode": "MED",
@@ -297,12 +373,8 @@
             "rCity": "Mahd Al Dahab"
         },
         {
-            "routCode": "MED",
-            "rCity": "Ula"
-        },
-        {
             "routCode": "MJM",
-            "rCity": "Afif"
+            "rCity": "Az Zulfi"
         },
         {
             "routCode": "MJM",
@@ -310,7 +382,15 @@
         },
         {
             "routCode": "MJM",
+            "rCity": "Hawtat Sudair"
+        },
+        {
+            "routCode": "MJM",
             "rCity": "Majmaah"
+        },
+        {
+            "routCode": "MJM",
+            "rCity": "Marat"
         },
         {
             "routCode": "MJM",
@@ -318,43 +398,67 @@
         },
         {
             "routCode": "MJM",
-            "rCity": "Zulfi"
+            "rCity": "Tumair"
+        },
+        {
+            "routCode": "MZF",
+            "rCity": "Adham"
+        },
+        {
+            "routCode": "MZF",
+            "rCity": "Al Qunfudhah"
+        },
+        {
+            "routCode": "MZF",
+            "rCity": "Wadi Hali"
         },
         {
             "routCode": "RAE",
             "rCity": "Arar"
         },
         {
-            "routCode": "RUH",
-            "rCity": "Aflaj"
+            "routCode": "RAE",
+            "rCity": "Turayf"
         },
         {
             "routCode": "RUH",
-            "rCity": "Hawtat Bani Tamim"
+            "rCity": "Dhurma"
         },
         {
             "routCode": "RUH",
-            "rCity": "Kharj"
+            "rCity": "Howtat Bani Tamim"
         },
         {
             "routCode": "RUH",
-            "rCity": "Muzamiyah"
+            "rCity": "Huraymila"
         },
         {
             "routCode": "RUH",
-            "rCity": "Quwayiyah"
+            "rCity": "Muzahimiyah"
         },
         {
             "routCode": "RUH",
-            "rCity": "Remah"
+            "rCity": "Quwayiyadh"
         },
         {
             "routCode": "RUH",
             "rCity": "Riyadh"
         },
         {
+            "routCode": "RUH",
+            "rCity": "Rumah"
+        },
+        {
+            "routCode": "TIF",
+            "rCity": "Hawiyyah"
+        },
+        {
             "routCode": "TIF",
             "rCity": "Khurmah"
+        },
+        {
+            "routCode": "TIF",
+            "rCity": "Muwayah"
         },
         {
             "routCode": "TIF",
@@ -393,28 +497,24 @@
             "rCity": "Tabarjal"
         },
         {
-            "routCode": "URY",
-            "rCity": "Turayf"
+            "routCode": "WAE",
+            "rCity": "As Sulayyil"
         },
         {
             "routCode": "WAE",
-            "rCity": "Sulayyil"
-        },
-        {
-            "routCode": "WAE",
-            "rCity": "Wadi Al Dawasir"
+            "rCity": "Wadi Al Dawasir (Al Khamasin)"
         },
         {
             "routCode": "YNB",
-            "rCity": "Badr"
+            "rCity": "Al Wajh"
         },
         {
             "routCode": "YNB",
-            "rCity": "Umlej"
+            "rCity": "Badr Hunain"
         },
         {
             "routCode": "YNB",
-            "rCity": "Wajh"
+            "rCity": "Ummlujj"
         },
         {
             "routCode": "YNB",
