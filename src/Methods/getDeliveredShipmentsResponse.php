@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getDeliveredShipmentsResponse
 {
-
     /**
-     * @var DeliveredShipmentResponse $getDeliveredShipmentsResult
+     * @var DeliveredShipmentResponse
      */
     protected $getDeliveredShipmentsResult = null;
 
@@ -15,7 +14,7 @@ class getDeliveredShipmentsResponse
      */
     public function __construct($getDeliveredShipmentsResult = null)
     {
-      $this->getDeliveredShipmentsResult = $getDeliveredShipmentsResult;
+        $this->getDeliveredShipmentsResult = $getDeliveredShipmentsResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class getDeliveredShipmentsResponse
      */
     public function getGetDeliveredShipmentsResult()
     {
-      return $this->getDeliveredShipmentsResult;
+        return $this->getDeliveredShipmentsResult;
     }
 
     /**
      * @param DeliveredShipmentResponse $getDeliveredShipmentsResult
+     *
      * @return \SmsaSDK\Methods\getDeliveredShipmentsResponse
      */
     public function setGetDeliveredShipmentsResult($getDeliveredShipmentsResult)
     {
-      $this->getDeliveredShipmentsResult = $getDeliveredShipmentsResult;
-      return $this;
-    }
+        $this->getDeliveredShipmentsResult = $getDeliveredShipmentsResult;
 
+        return $this;
+    }
 }

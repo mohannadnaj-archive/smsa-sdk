@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getTrackResponse
 {
-
     /**
-     * @var getTrackResp $getTrackResult
+     * @var getTrackResp
      */
     protected $getTrackResult = null;
 
@@ -15,7 +14,7 @@ class getTrackResponse
      */
     public function __construct($getTrackResult = null)
     {
-      $this->getTrackResult = $getTrackResult;
+        $this->getTrackResult = $getTrackResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class getTrackResponse
      */
     public function getGetTrackResult()
     {
-      return $this->getTrackResult;
+        return $this->getTrackResult;
     }
 
     /**
      * @param getTrackResp $getTrackResult
+     *
      * @return \SmsaSDK\Methods\getTrackResponse
      */
     public function setGetTrackResult($getTrackResult)
     {
-      $this->getTrackResult = $getTrackResult;
-      return $this;
-    }
+        $this->getTrackResult = $getTrackResult;
 
+        return $this;
+    }
 }

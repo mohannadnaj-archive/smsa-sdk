@@ -4,19 +4,18 @@ namespace SmsaSDK\Methods;
 
 class cancelShipment
 {
-
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $passkey
+     * @var string
      */
     protected $passkey = null;
 
     /**
-     * @var string $reas
+     * @var string
      */
     protected $reas = null;
 
@@ -27,9 +26,9 @@ class cancelShipment
      */
     public function __construct($awbNo = null, $passkey = null, $reas = null)
     {
-      $this->awbNo = $awbNo;
-      $this->passkey = $passkey;
-      $this->reas = $reas;
+        $this->awbNo = $awbNo;
+        $this->passkey = $passkey;
+        $this->reas = $reas;
     }
 
     /**
@@ -37,17 +36,19 @@ class cancelShipment
      */
     public function getAwbNo()
     {
-      return $this->awbNo;
+        return $this->awbNo;
     }
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\cancelShipment
      */
     public function setAwbNo($awbNo)
     {
-      $this->awbNo = $awbNo;
-      return $this;
+        $this->awbNo = $awbNo;
+
+        return $this;
     }
 
     /**
@@ -55,17 +56,19 @@ class cancelShipment
      */
     public function getPasskey()
     {
-      return $this->passkey;
+        return $this->passkey;
     }
 
     /**
      * @param string $passkey
+     *
      * @return \SmsaSDK\Methods\cancelShipment
      */
     public function setPasskey($passkey)
     {
-      $this->passkey = $passkey;
-      return $this;
+        $this->passkey = $passkey;
+
+        return $this;
     }
 
     /**
@@ -73,17 +76,18 @@ class cancelShipment
      */
     public function getReas()
     {
-      return $this->reas;
+        return $this->reas;
     }
 
     /**
      * @param string $reas
+     *
      * @return \SmsaSDK\Methods\cancelShipment
      */
     public function setReas($reas)
     {
-      $this->reas = $reas;
-      return $this;
-    }
+        $this->reas = $reas;
 
+        return $this;
+    }
 }

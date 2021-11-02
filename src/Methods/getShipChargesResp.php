@@ -4,26 +4,23 @@ namespace SmsaSDK\Methods;
 
 class getShipChargesResp
 {
-
     /**
-     * @var string $RequestStatus
+     * @var string
      */
     protected $RequestStatus = null;
 
     /**
-     * @var string $ShipCharges
+     * @var string
      */
     protected $ShipCharges = null;
 
     /**
-     * @var string $ShipChargesCurr
+     * @var string
      */
     protected $ShipChargesCurr = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -31,17 +28,19 @@ class getShipChargesResp
      */
     public function getRequestStatus()
     {
-      return $this->RequestStatus;
+        return $this->RequestStatus;
     }
 
     /**
      * @param string $RequestStatus
+     *
      * @return \SmsaSDK\Methods\getShipChargesResp
      */
     public function setRequestStatus($RequestStatus)
     {
-      $this->RequestStatus = $RequestStatus;
-      return $this;
+        $this->RequestStatus = $RequestStatus;
+
+        return $this;
     }
 
     /**
@@ -49,17 +48,19 @@ class getShipChargesResp
      */
     public function getShipCharges()
     {
-      return $this->ShipCharges;
+        return $this->ShipCharges;
     }
 
     /**
      * @param string $ShipCharges
+     *
      * @return \SmsaSDK\Methods\getShipChargesResp
      */
     public function setShipCharges($ShipCharges)
     {
-      $this->ShipCharges = $ShipCharges;
-      return $this;
+        $this->ShipCharges = $ShipCharges;
+
+        return $this;
     }
 
     /**
@@ -67,17 +68,18 @@ class getShipChargesResp
      */
     public function getShipChargesCurr()
     {
-      return $this->ShipChargesCurr;
+        return $this->ShipChargesCurr;
     }
 
     /**
      * @param string $ShipChargesCurr
+     *
      * @return \SmsaSDK\Methods\getShipChargesResp
      */
     public function setShipChargesCurr($ShipChargesCurr)
     {
-      $this->ShipChargesCurr = $ShipChargesCurr;
-      return $this;
-    }
+        $this->ShipChargesCurr = $ShipChargesCurr;
 
+        return $this;
+    }
 }

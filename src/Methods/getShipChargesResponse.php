@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getShipChargesResponse
 {
-
     /**
-     * @var getShipChargesResp $getShipChargesResult
+     * @var getShipChargesResp
      */
     protected $getShipChargesResult = null;
 
@@ -15,7 +14,7 @@ class getShipChargesResponse
      */
     public function __construct($getShipChargesResult = null)
     {
-      $this->getShipChargesResult = $getShipChargesResult;
+        $this->getShipChargesResult = $getShipChargesResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class getShipChargesResponse
      */
     public function getGetShipChargesResult()
     {
-      return $this->getShipChargesResult;
+        return $this->getShipChargesResult;
     }
 
     /**
      * @param getShipChargesResp $getShipChargesResult
+     *
      * @return \SmsaSDK\Methods\getShipChargesResponse
      */
     public function setGetShipChargesResult($getShipChargesResult)
     {
-      $this->getShipChargesResult = $getShipChargesResult;
-      return $this;
-    }
+        $this->getShipChargesResult = $getShipChargesResult;
 
+        return $this;
+    }
 }

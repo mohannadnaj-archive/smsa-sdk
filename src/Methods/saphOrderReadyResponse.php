@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class saphOrderReadyResponse
 {
-
     /**
-     * @var string $saphOrderReadyResult
+     * @var string
      */
     protected $saphOrderReadyResult = null;
 
@@ -15,7 +14,7 @@ class saphOrderReadyResponse
      */
     public function __construct($saphOrderReadyResult = null)
     {
-      $this->saphOrderReadyResult = $saphOrderReadyResult;
+        $this->saphOrderReadyResult = $saphOrderReadyResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class saphOrderReadyResponse
      */
     public function getSaphOrderReadyResult()
     {
-      return $this->saphOrderReadyResult;
+        return $this->saphOrderReadyResult;
     }
 
     /**
      * @param string $saphOrderReadyResult
+     *
      * @return \SmsaSDK\Methods\saphOrderReadyResponse
      */
     public function setSaphOrderReadyResult($saphOrderReadyResult)
     {
-      $this->saphOrderReadyResult = $saphOrderReadyResult;
-      return $this;
-    }
+        $this->saphOrderReadyResult = $saphOrderReadyResult;
 
+        return $this;
+    }
 }

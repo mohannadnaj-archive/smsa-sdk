@@ -42,19 +42,19 @@ class IntegrationTest extends TestCase
         Smsa::key(Config::get('smsa_testing_key'));
         Smsa::nullValues('');
         $shipmentData = [
-                'refNo'    => 'my_app_name'.time(),
-                'cName'    => 'Mohannad Najjar',
-                'cntry'    => 'SA',
-                'cCity'    => 'JEDDAH',
-                'cMobile'  => '0555555555',
-                'cAddr1'   => 'ALNAHDA DIST',
-                'shipType' => 'DLV',
-                'PCs'      => 1,
-                'cEmail'   => 'mohannad.najjar@mail.com',
-                'codAmt'   => '50',
-                'weight'   => '10',
-                'itemDesc' => 'Foo Bar',
-            ];
+            'refNo'    => 'my_app_name'.time(),
+            'cName'    => 'Mohannad Najjar',
+            'cntry'    => 'SA',
+            'cCity'    => 'JEDDAH',
+            'cMobile'  => '0555555555',
+            'cAddr1'   => 'ALNAHDA DIST',
+            'shipType' => 'DLV',
+            'PCs'      => 1,
+            'cEmail'   => 'mohannad.najjar@mail.com',
+            'codAmt'   => '50',
+            'weight'   => '10',
+            'itemDesc' => 'Foo Bar',
+        ];
 
         $shipment = Smsa::addShipment($shipmentData);
 

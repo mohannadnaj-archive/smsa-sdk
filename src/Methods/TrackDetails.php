@@ -4,36 +4,33 @@ namespace SmsaSDK\Methods;
 
 class TrackDetails
 {
-
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $evtDate
+     * @var string
      */
     protected $evtDate = null;
 
     /**
-     * @var string $Activity
+     * @var string
      */
     protected $Activity = null;
 
     /**
-     * @var string $Details
+     * @var string
      */
     protected $Details = null;
 
     /**
-     * @var string $Location
+     * @var string
      */
     protected $Location = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -41,17 +38,19 @@ class TrackDetails
      */
     public function getAwbNo()
     {
-      return $this->awbNo;
+        return $this->awbNo;
     }
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\TrackDetails
      */
     public function setAwbNo($awbNo)
     {
-      $this->awbNo = $awbNo;
-      return $this;
+        $this->awbNo = $awbNo;
+
+        return $this;
     }
 
     /**
@@ -59,17 +58,19 @@ class TrackDetails
      */
     public function getEvtDate()
     {
-      return $this->evtDate;
+        return $this->evtDate;
     }
 
     /**
      * @param string $evtDate
+     *
      * @return \SmsaSDK\Methods\TrackDetails
      */
     public function setEvtDate($evtDate)
     {
-      $this->evtDate = $evtDate;
-      return $this;
+        $this->evtDate = $evtDate;
+
+        return $this;
     }
 
     /**
@@ -77,17 +78,19 @@ class TrackDetails
      */
     public function getActivity()
     {
-      return $this->Activity;
+        return $this->Activity;
     }
 
     /**
      * @param string $Activity
+     *
      * @return \SmsaSDK\Methods\TrackDetails
      */
     public function setActivity($Activity)
     {
-      $this->Activity = $Activity;
-      return $this;
+        $this->Activity = $Activity;
+
+        return $this;
     }
 
     /**
@@ -95,17 +98,19 @@ class TrackDetails
      */
     public function getDetails()
     {
-      return $this->Details;
+        return $this->Details;
     }
 
     /**
      * @param string $Details
+     *
      * @return \SmsaSDK\Methods\TrackDetails
      */
     public function setDetails($Details)
     {
-      $this->Details = $Details;
-      return $this;
+        $this->Details = $Details;
+
+        return $this;
     }
 
     /**
@@ -113,17 +118,18 @@ class TrackDetails
      */
     public function getLocation()
     {
-      return $this->Location;
+        return $this->Location;
     }
 
     /**
      * @param string $Location
+     *
      * @return \SmsaSDK\Methods\TrackDetails
      */
     public function setLocation($Location)
     {
-      $this->Location = $Location;
-      return $this;
-    }
+        $this->Location = $Location;
 
+        return $this;
+    }
 }

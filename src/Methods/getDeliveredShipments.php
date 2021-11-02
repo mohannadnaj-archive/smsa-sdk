@@ -4,19 +4,18 @@ namespace SmsaSDK\Methods;
 
 class getDeliveredShipments
 {
-
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
     /**
-     * @var string $fromDate
+     * @var string
      */
     protected $fromDate = null;
 
     /**
-     * @var string $ToDate
+     * @var string
      */
     protected $ToDate = null;
 
@@ -27,9 +26,9 @@ class getDeliveredShipments
      */
     public function __construct($passKey = null, $fromDate = null, $ToDate = null)
     {
-      $this->passKey = $passKey;
-      $this->fromDate = $fromDate;
-      $this->ToDate = $ToDate;
+        $this->passKey = $passKey;
+        $this->fromDate = $fromDate;
+        $this->ToDate = $ToDate;
     }
 
     /**
@@ -37,17 +36,19 @@ class getDeliveredShipments
      */
     public function getPassKey()
     {
-      return $this->passKey;
+        return $this->passKey;
     }
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\getDeliveredShipments
      */
     public function setPassKey($passKey)
     {
-      $this->passKey = $passKey;
-      return $this;
+        $this->passKey = $passKey;
+
+        return $this;
     }
 
     /**
@@ -55,17 +56,19 @@ class getDeliveredShipments
      */
     public function getFromDate()
     {
-      return $this->fromDate;
+        return $this->fromDate;
     }
 
     /**
      * @param string $fromDate
+     *
      * @return \SmsaSDK\Methods\getDeliveredShipments
      */
     public function setFromDate($fromDate)
     {
-      $this->fromDate = $fromDate;
-      return $this;
+        $this->fromDate = $fromDate;
+
+        return $this;
     }
 
     /**
@@ -73,17 +76,18 @@ class getDeliveredShipments
      */
     public function getToDate()
     {
-      return $this->ToDate;
+        return $this->ToDate;
     }
 
     /**
      * @param string $ToDate
+     *
      * @return \SmsaSDK\Methods\getDeliveredShipments
      */
     public function setToDate($ToDate)
     {
-      $this->ToDate = $ToDate;
-      return $this;
-    }
+        $this->ToDate = $ToDate;
 
+        return $this;
+    }
 }

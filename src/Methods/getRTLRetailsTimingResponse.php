@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getRTLRetailsTimingResponse
 {
-
     /**
-     * @var getRTLRetailsTimingResult $getRTLRetailsTimingResult
+     * @var getRTLRetailsTimingResult
      */
     protected $getRTLRetailsTimingResult = null;
 
@@ -15,7 +14,7 @@ class getRTLRetailsTimingResponse
      */
     public function __construct($getRTLRetailsTimingResult = null)
     {
-      $this->getRTLRetailsTimingResult = $getRTLRetailsTimingResult;
+        $this->getRTLRetailsTimingResult = $getRTLRetailsTimingResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class getRTLRetailsTimingResponse
      */
     public function getGetRTLRetailsTimingResult()
     {
-      return $this->getRTLRetailsTimingResult;
+        return $this->getRTLRetailsTimingResult;
     }
 
     /**
      * @param getRTLRetailsTimingResult $getRTLRetailsTimingResult
+     *
      * @return \SmsaSDK\Methods\getRTLRetailsTimingResponse
      */
     public function setGetRTLRetailsTimingResult($getRTLRetailsTimingResult)
     {
-      $this->getRTLRetailsTimingResult = $getRTLRetailsTimingResult;
-      return $this;
-    }
+        $this->getRTLRetailsTimingResult = $getRTLRetailsTimingResult;
 
+        return $this;
+    }
 }

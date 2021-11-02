@@ -4,14 +4,13 @@ namespace SmsaSDK\Methods;
 
 class getRTLRetailsResult
 {
-
     /**
-     * @var string $schema
+     * @var string
      */
     protected $schema = null;
 
     /**
-     * @var string $any
+     * @var string
      */
     protected $any = null;
 
@@ -21,8 +20,8 @@ class getRTLRetailsResult
      */
     public function __construct($schema = null, $any = null)
     {
-      $this->schema = $schema;
-      $this->any = $any;
+        $this->schema = $schema;
+        $this->any = $any;
     }
 
     /**
@@ -30,17 +29,19 @@ class getRTLRetailsResult
      */
     public function getSchema()
     {
-      return $this->schema;
+        return $this->schema;
     }
 
     /**
      * @param string $schema
+     *
      * @return \SmsaSDK\Methods\getRTLRetailsResult
      */
     public function setSchema($schema)
     {
-      $this->schema = $schema;
-      return $this;
+        $this->schema = $schema;
+
+        return $this;
     }
 
     /**
@@ -48,17 +49,18 @@ class getRTLRetailsResult
      */
     public function getAny()
     {
-      return $this->any;
+        return $this->any;
     }
 
     /**
      * @param string $any
+     *
      * @return \SmsaSDK\Methods\getRTLRetailsResult
      */
     public function setAny($any)
     {
-      $this->any = $any;
-      return $this;
-    }
+        $this->any = $any;
 
+        return $this;
+    }
 }

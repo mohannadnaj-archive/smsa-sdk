@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getShipmentUpdatesResponse
 {
-
     /**
-     * @var getShipmentUpdatesResp $getShipmentUpdatesResult
+     * @var getShipmentUpdatesResp
      */
     protected $getShipmentUpdatesResult = null;
 
@@ -15,7 +14,7 @@ class getShipmentUpdatesResponse
      */
     public function __construct($getShipmentUpdatesResult = null)
     {
-      $this->getShipmentUpdatesResult = $getShipmentUpdatesResult;
+        $this->getShipmentUpdatesResult = $getShipmentUpdatesResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class getShipmentUpdatesResponse
      */
     public function getGetShipmentUpdatesResult()
     {
-      return $this->getShipmentUpdatesResult;
+        return $this->getShipmentUpdatesResult;
     }
 
     /**
      * @param getShipmentUpdatesResp $getShipmentUpdatesResult
+     *
      * @return \SmsaSDK\Methods\getShipmentUpdatesResponse
      */
     public function setGetShipmentUpdatesResult($getShipmentUpdatesResult)
     {
-      $this->getShipmentUpdatesResult = $getShipmentUpdatesResult;
-      return $this;
-    }
+        $this->getShipmentUpdatesResult = $getShipmentUpdatesResult;
 
+        return $this;
+    }
 }

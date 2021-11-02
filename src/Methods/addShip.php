@@ -4,179 +4,178 @@ namespace SmsaSDK\Methods;
 
 class addShip
 {
-
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
     /**
-     * @var string $refNo
+     * @var string
      */
     protected $refNo = null;
 
     /**
-     * @var string $sentDate
+     * @var string
      */
     protected $sentDate = null;
 
     /**
-     * @var string $idNo
+     * @var string
      */
     protected $idNo = null;
 
     /**
-     * @var string $cName
+     * @var string
      */
     protected $cName = null;
 
     /**
-     * @var string $cntry
+     * @var string
      */
     protected $cntry = null;
 
     /**
-     * @var string $cCity
+     * @var string
      */
     protected $cCity = null;
 
     /**
-     * @var string $cZip
+     * @var string
      */
     protected $cZip = null;
 
     /**
-     * @var string $cPOBox
+     * @var string
      */
     protected $cPOBox = null;
 
     /**
-     * @var string $cMobile
+     * @var string
      */
     protected $cMobile = null;
 
     /**
-     * @var string $cTel1
+     * @var string
      */
     protected $cTel1 = null;
 
     /**
-     * @var string $cTel2
+     * @var string
      */
     protected $cTel2 = null;
 
     /**
-     * @var string $cAddr1
+     * @var string
      */
     protected $cAddr1 = null;
 
     /**
-     * @var string $cAddr2
+     * @var string
      */
     protected $cAddr2 = null;
 
     /**
-     * @var string $shipType
+     * @var string
      */
     protected $shipType = null;
 
     /**
-     * @var int $PCs
+     * @var int
      */
     protected $PCs = null;
 
     /**
-     * @var string $cEmail
+     * @var string
      */
     protected $cEmail = null;
 
     /**
-     * @var string $carrValue
+     * @var string
      */
     protected $carrValue = null;
 
     /**
-     * @var string $carrCurr
+     * @var string
      */
     protected $carrCurr = null;
 
     /**
-     * @var string $codAmt
+     * @var string
      */
     protected $codAmt = null;
 
     /**
-     * @var string $weight
+     * @var string
      */
     protected $weight = null;
 
     /**
-     * @var string $custVal
+     * @var string
      */
     protected $custVal = null;
 
     /**
-     * @var string $custCurr
+     * @var string
      */
     protected $custCurr = null;
 
     /**
-     * @var string $insrAmt
+     * @var string
      */
     protected $insrAmt = null;
 
     /**
-     * @var string $insrCurr
+     * @var string
      */
     protected $insrCurr = null;
 
     /**
-     * @var string $itemDesc
+     * @var string
      */
     protected $itemDesc = null;
 
     /**
-     * @var string $sName
+     * @var string
      */
     protected $sName = null;
 
     /**
-     * @var string $sContact
+     * @var string
      */
     protected $sContact = null;
 
     /**
-     * @var string $sAddr1
+     * @var string
      */
     protected $sAddr1 = null;
 
     /**
-     * @var string $sAddr2
+     * @var string
      */
     protected $sAddr2 = null;
 
     /**
-     * @var string $sCity
+     * @var string
      */
     protected $sCity = null;
 
     /**
-     * @var string $sPhone
+     * @var string
      */
     protected $sPhone = null;
 
     /**
-     * @var string $sCntry
+     * @var string
      */
     protected $sCntry = null;
 
     /**
-     * @var string $prefDelvDate
+     * @var string
      */
     protected $prefDelvDate = null;
 
     /**
-     * @var string $gpsPoints
+     * @var string
      */
     protected $gpsPoints = null;
 
@@ -196,7 +195,7 @@ class addShip
      * @param string $cAddr1
      * @param string $cAddr2
      * @param string $shipType
-     * @param int $PCs
+     * @param int    $PCs
      * @param string $cEmail
      * @param string $carrValue
      * @param string $carrCurr
@@ -219,41 +218,41 @@ class addShip
      */
     public function __construct($passKey = null, $refNo = null, $sentDate = null, $idNo = null, $cName = null, $cntry = null, $cCity = null, $cZip = null, $cPOBox = null, $cMobile = null, $cTel1 = null, $cTel2 = null, $cAddr1 = null, $cAddr2 = null, $shipType = null, $PCs = null, $cEmail = null, $carrValue = null, $carrCurr = null, $codAmt = null, $weight = null, $custVal = null, $custCurr = null, $insrAmt = null, $insrCurr = null, $itemDesc = null, $sName = null, $sContact = null, $sAddr1 = null, $sAddr2 = null, $sCity = null, $sPhone = null, $sCntry = null, $prefDelvDate = null, $gpsPoints = null)
     {
-      $this->passKey = $passKey;
-      $this->refNo = $refNo;
-      $this->sentDate = $sentDate;
-      $this->idNo = $idNo;
-      $this->cName = $cName;
-      $this->cntry = $cntry;
-      $this->cCity = $cCity;
-      $this->cZip = $cZip;
-      $this->cPOBox = $cPOBox;
-      $this->cMobile = $cMobile;
-      $this->cTel1 = $cTel1;
-      $this->cTel2 = $cTel2;
-      $this->cAddr1 = $cAddr1;
-      $this->cAddr2 = $cAddr2;
-      $this->shipType = $shipType;
-      $this->PCs = $PCs;
-      $this->cEmail = $cEmail;
-      $this->carrValue = $carrValue;
-      $this->carrCurr = $carrCurr;
-      $this->codAmt = $codAmt;
-      $this->weight = $weight;
-      $this->custVal = $custVal;
-      $this->custCurr = $custCurr;
-      $this->insrAmt = $insrAmt;
-      $this->insrCurr = $insrCurr;
-      $this->itemDesc = $itemDesc;
-      $this->sName = $sName;
-      $this->sContact = $sContact;
-      $this->sAddr1 = $sAddr1;
-      $this->sAddr2 = $sAddr2;
-      $this->sCity = $sCity;
-      $this->sPhone = $sPhone;
-      $this->sCntry = $sCntry;
-      $this->prefDelvDate = $prefDelvDate;
-      $this->gpsPoints = $gpsPoints;
+        $this->passKey = $passKey;
+        $this->refNo = $refNo;
+        $this->sentDate = $sentDate;
+        $this->idNo = $idNo;
+        $this->cName = $cName;
+        $this->cntry = $cntry;
+        $this->cCity = $cCity;
+        $this->cZip = $cZip;
+        $this->cPOBox = $cPOBox;
+        $this->cMobile = $cMobile;
+        $this->cTel1 = $cTel1;
+        $this->cTel2 = $cTel2;
+        $this->cAddr1 = $cAddr1;
+        $this->cAddr2 = $cAddr2;
+        $this->shipType = $shipType;
+        $this->PCs = $PCs;
+        $this->cEmail = $cEmail;
+        $this->carrValue = $carrValue;
+        $this->carrCurr = $carrCurr;
+        $this->codAmt = $codAmt;
+        $this->weight = $weight;
+        $this->custVal = $custVal;
+        $this->custCurr = $custCurr;
+        $this->insrAmt = $insrAmt;
+        $this->insrCurr = $insrCurr;
+        $this->itemDesc = $itemDesc;
+        $this->sName = $sName;
+        $this->sContact = $sContact;
+        $this->sAddr1 = $sAddr1;
+        $this->sAddr2 = $sAddr2;
+        $this->sCity = $sCity;
+        $this->sPhone = $sPhone;
+        $this->sCntry = $sCntry;
+        $this->prefDelvDate = $prefDelvDate;
+        $this->gpsPoints = $gpsPoints;
     }
 
     /**
@@ -261,17 +260,19 @@ class addShip
      */
     public function getPassKey()
     {
-      return $this->passKey;
+        return $this->passKey;
     }
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setPassKey($passKey)
     {
-      $this->passKey = $passKey;
-      return $this;
+        $this->passKey = $passKey;
+
+        return $this;
     }
 
     /**
@@ -279,17 +280,19 @@ class addShip
      */
     public function getRefNo()
     {
-      return $this->refNo;
+        return $this->refNo;
     }
 
     /**
      * @param string $refNo
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setRefNo($refNo)
     {
-      $this->refNo = $refNo;
-      return $this;
+        $this->refNo = $refNo;
+
+        return $this;
     }
 
     /**
@@ -297,17 +300,19 @@ class addShip
      */
     public function getSentDate()
     {
-      return $this->sentDate;
+        return $this->sentDate;
     }
 
     /**
      * @param string $sentDate
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSentDate($sentDate)
     {
-      $this->sentDate = $sentDate;
-      return $this;
+        $this->sentDate = $sentDate;
+
+        return $this;
     }
 
     /**
@@ -315,17 +320,19 @@ class addShip
      */
     public function getIdNo()
     {
-      return $this->idNo;
+        return $this->idNo;
     }
 
     /**
      * @param string $idNo
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setIdNo($idNo)
     {
-      $this->idNo = $idNo;
-      return $this;
+        $this->idNo = $idNo;
+
+        return $this;
     }
 
     /**
@@ -333,17 +340,19 @@ class addShip
      */
     public function getCName()
     {
-      return $this->cName;
+        return $this->cName;
     }
 
     /**
      * @param string $cName
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCName($cName)
     {
-      $this->cName = $cName;
-      return $this;
+        $this->cName = $cName;
+
+        return $this;
     }
 
     /**
@@ -351,17 +360,19 @@ class addShip
      */
     public function getCntry()
     {
-      return $this->cntry;
+        return $this->cntry;
     }
 
     /**
      * @param string $cntry
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCntry($cntry)
     {
-      $this->cntry = $cntry;
-      return $this;
+        $this->cntry = $cntry;
+
+        return $this;
     }
 
     /**
@@ -369,17 +380,19 @@ class addShip
      */
     public function getCCity()
     {
-      return $this->cCity;
+        return $this->cCity;
     }
 
     /**
      * @param string $cCity
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCCity($cCity)
     {
-      $this->cCity = $cCity;
-      return $this;
+        $this->cCity = $cCity;
+
+        return $this;
     }
 
     /**
@@ -387,17 +400,19 @@ class addShip
      */
     public function getCZip()
     {
-      return $this->cZip;
+        return $this->cZip;
     }
 
     /**
      * @param string $cZip
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCZip($cZip)
     {
-      $this->cZip = $cZip;
-      return $this;
+        $this->cZip = $cZip;
+
+        return $this;
     }
 
     /**
@@ -405,17 +420,19 @@ class addShip
      */
     public function getCPOBox()
     {
-      return $this->cPOBox;
+        return $this->cPOBox;
     }
 
     /**
      * @param string $cPOBox
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCPOBox($cPOBox)
     {
-      $this->cPOBox = $cPOBox;
-      return $this;
+        $this->cPOBox = $cPOBox;
+
+        return $this;
     }
 
     /**
@@ -423,17 +440,19 @@ class addShip
      */
     public function getCMobile()
     {
-      return $this->cMobile;
+        return $this->cMobile;
     }
 
     /**
      * @param string $cMobile
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCMobile($cMobile)
     {
-      $this->cMobile = $cMobile;
-      return $this;
+        $this->cMobile = $cMobile;
+
+        return $this;
     }
 
     /**
@@ -441,17 +460,19 @@ class addShip
      */
     public function getCTel1()
     {
-      return $this->cTel1;
+        return $this->cTel1;
     }
 
     /**
      * @param string $cTel1
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCTel1($cTel1)
     {
-      $this->cTel1 = $cTel1;
-      return $this;
+        $this->cTel1 = $cTel1;
+
+        return $this;
     }
 
     /**
@@ -459,17 +480,19 @@ class addShip
      */
     public function getCTel2()
     {
-      return $this->cTel2;
+        return $this->cTel2;
     }
 
     /**
      * @param string $cTel2
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCTel2($cTel2)
     {
-      $this->cTel2 = $cTel2;
-      return $this;
+        $this->cTel2 = $cTel2;
+
+        return $this;
     }
 
     /**
@@ -477,17 +500,19 @@ class addShip
      */
     public function getCAddr1()
     {
-      return $this->cAddr1;
+        return $this->cAddr1;
     }
 
     /**
      * @param string $cAddr1
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCAddr1($cAddr1)
     {
-      $this->cAddr1 = $cAddr1;
-      return $this;
+        $this->cAddr1 = $cAddr1;
+
+        return $this;
     }
 
     /**
@@ -495,17 +520,19 @@ class addShip
      */
     public function getCAddr2()
     {
-      return $this->cAddr2;
+        return $this->cAddr2;
     }
 
     /**
      * @param string $cAddr2
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCAddr2($cAddr2)
     {
-      $this->cAddr2 = $cAddr2;
-      return $this;
+        $this->cAddr2 = $cAddr2;
+
+        return $this;
     }
 
     /**
@@ -513,17 +540,19 @@ class addShip
      */
     public function getShipType()
     {
-      return $this->shipType;
+        return $this->shipType;
     }
 
     /**
      * @param string $shipType
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setShipType($shipType)
     {
-      $this->shipType = $shipType;
-      return $this;
+        $this->shipType = $shipType;
+
+        return $this;
     }
 
     /**
@@ -531,17 +560,19 @@ class addShip
      */
     public function getPCs()
     {
-      return $this->PCs;
+        return $this->PCs;
     }
 
     /**
      * @param int $PCs
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setPCs($PCs)
     {
-      $this->PCs = $PCs;
-      return $this;
+        $this->PCs = $PCs;
+
+        return $this;
     }
 
     /**
@@ -549,17 +580,19 @@ class addShip
      */
     public function getCEmail()
     {
-      return $this->cEmail;
+        return $this->cEmail;
     }
 
     /**
      * @param string $cEmail
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCEmail($cEmail)
     {
-      $this->cEmail = $cEmail;
-      return $this;
+        $this->cEmail = $cEmail;
+
+        return $this;
     }
 
     /**
@@ -567,17 +600,19 @@ class addShip
      */
     public function getCarrValue()
     {
-      return $this->carrValue;
+        return $this->carrValue;
     }
 
     /**
      * @param string $carrValue
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCarrValue($carrValue)
     {
-      $this->carrValue = $carrValue;
-      return $this;
+        $this->carrValue = $carrValue;
+
+        return $this;
     }
 
     /**
@@ -585,17 +620,19 @@ class addShip
      */
     public function getCarrCurr()
     {
-      return $this->carrCurr;
+        return $this->carrCurr;
     }
 
     /**
      * @param string $carrCurr
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCarrCurr($carrCurr)
     {
-      $this->carrCurr = $carrCurr;
-      return $this;
+        $this->carrCurr = $carrCurr;
+
+        return $this;
     }
 
     /**
@@ -603,17 +640,19 @@ class addShip
      */
     public function getCodAmt()
     {
-      return $this->codAmt;
+        return $this->codAmt;
     }
 
     /**
      * @param string $codAmt
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCodAmt($codAmt)
     {
-      $this->codAmt = $codAmt;
-      return $this;
+        $this->codAmt = $codAmt;
+
+        return $this;
     }
 
     /**
@@ -621,17 +660,19 @@ class addShip
      */
     public function getWeight()
     {
-      return $this->weight;
+        return $this->weight;
     }
 
     /**
      * @param string $weight
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setWeight($weight)
     {
-      $this->weight = $weight;
-      return $this;
+        $this->weight = $weight;
+
+        return $this;
     }
 
     /**
@@ -639,17 +680,19 @@ class addShip
      */
     public function getCustVal()
     {
-      return $this->custVal;
+        return $this->custVal;
     }
 
     /**
      * @param string $custVal
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCustVal($custVal)
     {
-      $this->custVal = $custVal;
-      return $this;
+        $this->custVal = $custVal;
+
+        return $this;
     }
 
     /**
@@ -657,17 +700,19 @@ class addShip
      */
     public function getCustCurr()
     {
-      return $this->custCurr;
+        return $this->custCurr;
     }
 
     /**
      * @param string $custCurr
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setCustCurr($custCurr)
     {
-      $this->custCurr = $custCurr;
-      return $this;
+        $this->custCurr = $custCurr;
+
+        return $this;
     }
 
     /**
@@ -675,17 +720,19 @@ class addShip
      */
     public function getInsrAmt()
     {
-      return $this->insrAmt;
+        return $this->insrAmt;
     }
 
     /**
      * @param string $insrAmt
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setInsrAmt($insrAmt)
     {
-      $this->insrAmt = $insrAmt;
-      return $this;
+        $this->insrAmt = $insrAmt;
+
+        return $this;
     }
 
     /**
@@ -693,17 +740,19 @@ class addShip
      */
     public function getInsrCurr()
     {
-      return $this->insrCurr;
+        return $this->insrCurr;
     }
 
     /**
      * @param string $insrCurr
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setInsrCurr($insrCurr)
     {
-      $this->insrCurr = $insrCurr;
-      return $this;
+        $this->insrCurr = $insrCurr;
+
+        return $this;
     }
 
     /**
@@ -711,17 +760,19 @@ class addShip
      */
     public function getItemDesc()
     {
-      return $this->itemDesc;
+        return $this->itemDesc;
     }
 
     /**
      * @param string $itemDesc
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setItemDesc($itemDesc)
     {
-      $this->itemDesc = $itemDesc;
-      return $this;
+        $this->itemDesc = $itemDesc;
+
+        return $this;
     }
 
     /**
@@ -729,17 +780,19 @@ class addShip
      */
     public function getSName()
     {
-      return $this->sName;
+        return $this->sName;
     }
 
     /**
      * @param string $sName
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSName($sName)
     {
-      $this->sName = $sName;
-      return $this;
+        $this->sName = $sName;
+
+        return $this;
     }
 
     /**
@@ -747,17 +800,19 @@ class addShip
      */
     public function getSContact()
     {
-      return $this->sContact;
+        return $this->sContact;
     }
 
     /**
      * @param string $sContact
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSContact($sContact)
     {
-      $this->sContact = $sContact;
-      return $this;
+        $this->sContact = $sContact;
+
+        return $this;
     }
 
     /**
@@ -765,17 +820,19 @@ class addShip
      */
     public function getSAddr1()
     {
-      return $this->sAddr1;
+        return $this->sAddr1;
     }
 
     /**
      * @param string $sAddr1
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSAddr1($sAddr1)
     {
-      $this->sAddr1 = $sAddr1;
-      return $this;
+        $this->sAddr1 = $sAddr1;
+
+        return $this;
     }
 
     /**
@@ -783,17 +840,19 @@ class addShip
      */
     public function getSAddr2()
     {
-      return $this->sAddr2;
+        return $this->sAddr2;
     }
 
     /**
      * @param string $sAddr2
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSAddr2($sAddr2)
     {
-      $this->sAddr2 = $sAddr2;
-      return $this;
+        $this->sAddr2 = $sAddr2;
+
+        return $this;
     }
 
     /**
@@ -801,17 +860,19 @@ class addShip
      */
     public function getSCity()
     {
-      return $this->sCity;
+        return $this->sCity;
     }
 
     /**
      * @param string $sCity
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSCity($sCity)
     {
-      $this->sCity = $sCity;
-      return $this;
+        $this->sCity = $sCity;
+
+        return $this;
     }
 
     /**
@@ -819,17 +880,19 @@ class addShip
      */
     public function getSPhone()
     {
-      return $this->sPhone;
+        return $this->sPhone;
     }
 
     /**
      * @param string $sPhone
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSPhone($sPhone)
     {
-      $this->sPhone = $sPhone;
-      return $this;
+        $this->sPhone = $sPhone;
+
+        return $this;
     }
 
     /**
@@ -837,17 +900,19 @@ class addShip
      */
     public function getSCntry()
     {
-      return $this->sCntry;
+        return $this->sCntry;
     }
 
     /**
      * @param string $sCntry
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setSCntry($sCntry)
     {
-      $this->sCntry = $sCntry;
-      return $this;
+        $this->sCntry = $sCntry;
+
+        return $this;
     }
 
     /**
@@ -855,17 +920,19 @@ class addShip
      */
     public function getPrefDelvDate()
     {
-      return $this->prefDelvDate;
+        return $this->prefDelvDate;
     }
 
     /**
      * @param string $prefDelvDate
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setPrefDelvDate($prefDelvDate)
     {
-      $this->prefDelvDate = $prefDelvDate;
-      return $this;
+        $this->prefDelvDate = $prefDelvDate;
+
+        return $this;
     }
 
     /**
@@ -873,17 +940,18 @@ class addShip
      */
     public function getGpsPoints()
     {
-      return $this->gpsPoints;
+        return $this->gpsPoints;
     }
 
     /**
      * @param string $gpsPoints
+     *
      * @return \SmsaSDK\Methods\addShip
      */
     public function setGpsPoints($gpsPoints)
     {
-      $this->gpsPoints = $gpsPoints;
-      return $this;
-    }
+        $this->gpsPoints = $gpsPoints;
 
+        return $this;
+    }
 }

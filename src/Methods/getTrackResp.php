@@ -4,21 +4,18 @@ namespace SmsaSDK\Methods;
 
 class getTrackResp
 {
-
     /**
-     * @var string $RequestStatus
+     * @var string
      */
     protected $RequestStatus = null;
 
     /**
-     * @var ArrayOfTrackDetails $TrackDetailsList
+     * @var ArrayOfTrackDetails
      */
     protected $TrackDetailsList = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -26,17 +23,19 @@ class getTrackResp
      */
     public function getRequestStatus()
     {
-      return $this->RequestStatus;
+        return $this->RequestStatus;
     }
 
     /**
      * @param string $RequestStatus
+     *
      * @return \SmsaSDK\Methods\getTrackResp
      */
     public function setRequestStatus($RequestStatus)
     {
-      $this->RequestStatus = $RequestStatus;
-      return $this;
+        $this->RequestStatus = $RequestStatus;
+
+        return $this;
     }
 
     /**
@@ -44,17 +43,18 @@ class getTrackResp
      */
     public function getTrackDetailsList()
     {
-      return $this->TrackDetailsList;
+        return $this->TrackDetailsList;
     }
 
     /**
      * @param ArrayOfTrackDetails $TrackDetailsList
+     *
      * @return \SmsaSDK\Methods\getTrackResp
      */
     public function setTrackDetailsList($TrackDetailsList)
     {
-      $this->TrackDetailsList = $TrackDetailsList;
-      return $this;
-    }
+        $this->TrackDetailsList = $TrackDetailsList;
 
+        return $this;
+    }
 }

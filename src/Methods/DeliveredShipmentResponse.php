@@ -4,21 +4,18 @@ namespace SmsaSDK\Methods;
 
 class DeliveredShipmentResponse
 {
-
     /**
-     * @var string $RequestStatus
+     * @var string
      */
     protected $RequestStatus = null;
 
     /**
-     * @var ArrayOfDeliveredShipmentDetails $TrackingDetailsList
+     * @var ArrayOfDeliveredShipmentDetails
      */
     protected $TrackingDetailsList = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -26,17 +23,19 @@ class DeliveredShipmentResponse
      */
     public function getRequestStatus()
     {
-      return $this->RequestStatus;
+        return $this->RequestStatus;
     }
 
     /**
      * @param string $RequestStatus
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentResponse
      */
     public function setRequestStatus($RequestStatus)
     {
-      $this->RequestStatus = $RequestStatus;
-      return $this;
+        $this->RequestStatus = $RequestStatus;
+
+        return $this;
     }
 
     /**
@@ -44,17 +43,18 @@ class DeliveredShipmentResponse
      */
     public function getTrackingDetailsList()
     {
-      return $this->TrackingDetailsList;
+        return $this->TrackingDetailsList;
     }
 
     /**
      * @param ArrayOfDeliveredShipmentDetails $TrackingDetailsList
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentResponse
      */
     public function setTrackingDetailsList($TrackingDetailsList)
     {
-      $this->TrackingDetailsList = $TrackingDetailsList;
-      return $this;
-    }
+        $this->TrackingDetailsList = $TrackingDetailsList;
 
+        return $this;
+    }
 }

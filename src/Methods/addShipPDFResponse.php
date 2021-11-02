@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class addShipPDFResponse
 {
-
     /**
-     * @var addShipPDFResp $addShipPDFResult
+     * @var addShipPDFResp
      */
     protected $addShipPDFResult = null;
 
@@ -15,7 +14,7 @@ class addShipPDFResponse
      */
     public function __construct($addShipPDFResult = null)
     {
-      $this->addShipPDFResult = $addShipPDFResult;
+        $this->addShipPDFResult = $addShipPDFResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class addShipPDFResponse
      */
     public function getAddShipPDFResult()
     {
-      return $this->addShipPDFResult;
+        return $this->addShipPDFResult;
     }
 
     /**
      * @param addShipPDFResp $addShipPDFResult
+     *
      * @return \SmsaSDK\Methods\addShipPDFResponse
      */
     public function setAddShipPDFResult($addShipPDFResult)
     {
-      $this->addShipPDFResult = $addShipPDFResult;
-      return $this;
-    }
+        $this->addShipPDFResult = $addShipPDFResult;
 
+        return $this;
+    }
 }

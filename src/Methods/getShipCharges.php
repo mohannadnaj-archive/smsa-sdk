@@ -4,44 +4,43 @@ namespace SmsaSDK\Methods;
 
 class getShipCharges
 {
-
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
     /**
-     * @var string $shipCity
+     * @var string
      */
     protected $shipCity = null;
 
     /**
-     * @var string $shipCntry
+     * @var string
      */
     protected $shipCntry = null;
 
     /**
-     * @var string $destCity
+     * @var string
      */
     protected $destCity = null;
 
     /**
-     * @var string $destCntry
+     * @var string
      */
     protected $destCntry = null;
 
     /**
-     * @var string $shipType
+     * @var string
      */
     protected $shipType = null;
 
     /**
-     * @var float $codAmt
+     * @var float
      */
     protected $codAmt = null;
 
     /**
-     * @var float $weight
+     * @var float
      */
     protected $weight = null;
 
@@ -52,19 +51,19 @@ class getShipCharges
      * @param string $destCity
      * @param string $destCntry
      * @param string $shipType
-     * @param float $codAmt
-     * @param float $weight
+     * @param float  $codAmt
+     * @param float  $weight
      */
     public function __construct($passKey = null, $shipCity = null, $shipCntry = null, $destCity = null, $destCntry = null, $shipType = null, $codAmt = null, $weight = null)
     {
-      $this->passKey = $passKey;
-      $this->shipCity = $shipCity;
-      $this->shipCntry = $shipCntry;
-      $this->destCity = $destCity;
-      $this->destCntry = $destCntry;
-      $this->shipType = $shipType;
-      $this->codAmt = $codAmt;
-      $this->weight = $weight;
+        $this->passKey = $passKey;
+        $this->shipCity = $shipCity;
+        $this->shipCntry = $shipCntry;
+        $this->destCity = $destCity;
+        $this->destCntry = $destCntry;
+        $this->shipType = $shipType;
+        $this->codAmt = $codAmt;
+        $this->weight = $weight;
     }
 
     /**
@@ -72,17 +71,19 @@ class getShipCharges
      */
     public function getPassKey()
     {
-      return $this->passKey;
+        return $this->passKey;
     }
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setPassKey($passKey)
     {
-      $this->passKey = $passKey;
-      return $this;
+        $this->passKey = $passKey;
+
+        return $this;
     }
 
     /**
@@ -90,17 +91,19 @@ class getShipCharges
      */
     public function getShipCity()
     {
-      return $this->shipCity;
+        return $this->shipCity;
     }
 
     /**
      * @param string $shipCity
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setShipCity($shipCity)
     {
-      $this->shipCity = $shipCity;
-      return $this;
+        $this->shipCity = $shipCity;
+
+        return $this;
     }
 
     /**
@@ -108,17 +111,19 @@ class getShipCharges
      */
     public function getShipCntry()
     {
-      return $this->shipCntry;
+        return $this->shipCntry;
     }
 
     /**
      * @param string $shipCntry
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setShipCntry($shipCntry)
     {
-      $this->shipCntry = $shipCntry;
-      return $this;
+        $this->shipCntry = $shipCntry;
+
+        return $this;
     }
 
     /**
@@ -126,17 +131,19 @@ class getShipCharges
      */
     public function getDestCity()
     {
-      return $this->destCity;
+        return $this->destCity;
     }
 
     /**
      * @param string $destCity
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setDestCity($destCity)
     {
-      $this->destCity = $destCity;
-      return $this;
+        $this->destCity = $destCity;
+
+        return $this;
     }
 
     /**
@@ -144,17 +151,19 @@ class getShipCharges
      */
     public function getDestCntry()
     {
-      return $this->destCntry;
+        return $this->destCntry;
     }
 
     /**
      * @param string $destCntry
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setDestCntry($destCntry)
     {
-      $this->destCntry = $destCntry;
-      return $this;
+        $this->destCntry = $destCntry;
+
+        return $this;
     }
 
     /**
@@ -162,17 +171,19 @@ class getShipCharges
      */
     public function getShipType()
     {
-      return $this->shipType;
+        return $this->shipType;
     }
 
     /**
      * @param string $shipType
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setShipType($shipType)
     {
-      $this->shipType = $shipType;
-      return $this;
+        $this->shipType = $shipType;
+
+        return $this;
     }
 
     /**
@@ -180,17 +191,19 @@ class getShipCharges
      */
     public function getCodAmt()
     {
-      return $this->codAmt;
+        return $this->codAmt;
     }
 
     /**
      * @param float $codAmt
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setCodAmt($codAmt)
     {
-      $this->codAmt = $codAmt;
-      return $this;
+        $this->codAmt = $codAmt;
+
+        return $this;
     }
 
     /**
@@ -198,17 +211,18 @@ class getShipCharges
      */
     public function getWeight()
     {
-      return $this->weight;
+        return $this->weight;
     }
 
     /**
      * @param float $weight
+     *
      * @return \SmsaSDK\Methods\getShipCharges
      */
     public function setWeight($weight)
     {
-      $this->weight = $weight;
-      return $this;
-    }
+        $this->weight = $weight;
 
+        return $this;
+    }
 }

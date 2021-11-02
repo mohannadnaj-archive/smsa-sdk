@@ -29,8 +29,7 @@ function build_method($method, $response)
     $innerMethodTemplate = str_replace('%method', $method, $innerMethodTemplate);
 
     $innerMethod = '';
-    if ( class_exists($methodClass = 'SmsaSDK\\Methods\\'.$method))
-    {
+    if (class_exists($methodClass = 'SmsaSDK\\Methods\\'.$method)) {
         $reflection = new ReflectionClass($methodClass);
         $params = $reflection->getConstructor()->getParameters();
 
@@ -46,8 +45,7 @@ function build_method($method, $response)
 
     $innerMethodTemplate = str_replace('%innerMethod', $innerMethod, $innerMethodTemplate);
 
-    if ( $rawMethod !== $rawMethodCopy)
-    {
+    if ($rawMethod !== $rawMethodCopy) {
         $rawMethod = substr($rawMethod, 0, -2); // remove the last comma and space ", "
     }
 
@@ -64,7 +62,8 @@ function get_methods_and_responses()
     preg_match_all($responseRegex, $wsdlFile, $responseMethods);
 
     $responseMethods = array_filter(
-        $responseMethods[1], function ($method) {
+        $responseMethods[1],
+        function ($method) {
             return substr($method, 0, 4) != 'tns:';
         }
     );
@@ -76,7 +75,8 @@ function get_methods_and_responses()
     $responseMethodsCopy = [];
 
     array_walk(
-        $responseMethods, function ($method) use (&$responseMethodsCopy) {
+        $responseMethods,
+        function ($method) use (&$responseMethodsCopy) {
             $responseMethodsCopy[$method] = $method.'Response';
         }
     );

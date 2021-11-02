@@ -4,21 +4,18 @@ namespace SmsaSDK\Methods;
 
 class addShipPDFResp
 {
-
     /**
-     * @var string $Response
+     * @var string
      */
     protected $Response = null;
 
     /**
-     * @var base64Binary $aPDF
+     * @var base64Binary
      */
     protected $aPDF = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -26,17 +23,19 @@ class addShipPDFResp
      */
     public function getResponse()
     {
-      return $this->Response;
+        return $this->Response;
     }
 
     /**
      * @param string $Response
+     *
      * @return \SmsaSDK\Methods\addShipPDFResp
      */
     public function setResponse($Response)
     {
-      $this->Response = $Response;
-      return $this;
+        $this->Response = $Response;
+
+        return $this;
     }
 
     /**
@@ -44,17 +43,18 @@ class addShipPDFResp
      */
     public function getAPDF()
     {
-      return $this->aPDF;
+        return $this->aPDF;
     }
 
     /**
      * @param base64Binary $aPDF
+     *
      * @return \SmsaSDK\Methods\addShipPDFResp
      */
     public function setAPDF($aPDF)
     {
-      $this->aPDF = $aPDF;
-      return $this;
-    }
+        $this->aPDF = $aPDF;
 
+        return $this;
+    }
 }

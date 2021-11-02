@@ -4,56 +4,53 @@ namespace SmsaSDK\Methods;
 
 class DeliveredShipmentDetails
 {
-
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $refNo
+     * @var string
      */
     protected $refNo = null;
 
     /**
-     * @var string $shipDate
+     * @var string
      */
     protected $shipDate = null;
 
     /**
-     * @var string $cName
+     * @var string
      */
     protected $cName = null;
 
     /**
-     * @var string $delvTo
+     * @var string
      */
     protected $delvTo = null;
 
     /**
-     * @var string $delvDate
+     * @var string
      */
     protected $delvDate = null;
 
     /**
-     * @var string $cMobile
+     * @var string
      */
     protected $cMobile = null;
 
     /**
-     * @var string $codAmt
+     * @var string
      */
     protected $codAmt = null;
 
     /**
-     * @var string $itemDesc
+     * @var string
      */
     protected $itemDesc = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -61,17 +58,19 @@ class DeliveredShipmentDetails
      */
     public function getAwbNo()
     {
-      return $this->awbNo;
+        return $this->awbNo;
     }
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setAwbNo($awbNo)
     {
-      $this->awbNo = $awbNo;
-      return $this;
+        $this->awbNo = $awbNo;
+
+        return $this;
     }
 
     /**
@@ -79,17 +78,19 @@ class DeliveredShipmentDetails
      */
     public function getRefNo()
     {
-      return $this->refNo;
+        return $this->refNo;
     }
 
     /**
      * @param string $refNo
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setRefNo($refNo)
     {
-      $this->refNo = $refNo;
-      return $this;
+        $this->refNo = $refNo;
+
+        return $this;
     }
 
     /**
@@ -97,17 +98,19 @@ class DeliveredShipmentDetails
      */
     public function getShipDate()
     {
-      return $this->shipDate;
+        return $this->shipDate;
     }
 
     /**
      * @param string $shipDate
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setShipDate($shipDate)
     {
-      $this->shipDate = $shipDate;
-      return $this;
+        $this->shipDate = $shipDate;
+
+        return $this;
     }
 
     /**
@@ -115,17 +118,19 @@ class DeliveredShipmentDetails
      */
     public function getCName()
     {
-      return $this->cName;
+        return $this->cName;
     }
 
     /**
      * @param string $cName
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setCName($cName)
     {
-      $this->cName = $cName;
-      return $this;
+        $this->cName = $cName;
+
+        return $this;
     }
 
     /**
@@ -133,17 +138,19 @@ class DeliveredShipmentDetails
      */
     public function getDelvTo()
     {
-      return $this->delvTo;
+        return $this->delvTo;
     }
 
     /**
      * @param string $delvTo
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setDelvTo($delvTo)
     {
-      $this->delvTo = $delvTo;
-      return $this;
+        $this->delvTo = $delvTo;
+
+        return $this;
     }
 
     /**
@@ -151,17 +158,19 @@ class DeliveredShipmentDetails
      */
     public function getDelvDate()
     {
-      return $this->delvDate;
+        return $this->delvDate;
     }
 
     /**
      * @param string $delvDate
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setDelvDate($delvDate)
     {
-      $this->delvDate = $delvDate;
-      return $this;
+        $this->delvDate = $delvDate;
+
+        return $this;
     }
 
     /**
@@ -169,17 +178,19 @@ class DeliveredShipmentDetails
      */
     public function getCMobile()
     {
-      return $this->cMobile;
+        return $this->cMobile;
     }
 
     /**
      * @param string $cMobile
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setCMobile($cMobile)
     {
-      $this->cMobile = $cMobile;
-      return $this;
+        $this->cMobile = $cMobile;
+
+        return $this;
     }
 
     /**
@@ -187,17 +198,19 @@ class DeliveredShipmentDetails
      */
     public function getCodAmt()
     {
-      return $this->codAmt;
+        return $this->codAmt;
     }
 
     /**
      * @param string $codAmt
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setCodAmt($codAmt)
     {
-      $this->codAmt = $codAmt;
-      return $this;
+        $this->codAmt = $codAmt;
+
+        return $this;
     }
 
     /**
@@ -205,17 +218,18 @@ class DeliveredShipmentDetails
      */
     public function getItemDesc()
     {
-      return $this->itemDesc;
+        return $this->itemDesc;
     }
 
     /**
      * @param string $itemDesc
+     *
      * @return \SmsaSDK\Methods\DeliveredShipmentDetails
      */
     public function setItemDesc($itemDesc)
     {
-      $this->itemDesc = $itemDesc;
-      return $this;
-    }
+        $this->itemDesc = $itemDesc;
 
+        return $this;
+    }
 }

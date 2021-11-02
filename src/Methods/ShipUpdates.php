@@ -4,41 +4,38 @@ namespace SmsaSDK\Methods;
 
 class ShipUpdates
 {
-
     /**
-     * @var string $rowId
+     * @var string
      */
     protected $rowId = null;
 
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $evtDate
+     * @var string
      */
     protected $evtDate = null;
 
     /**
-     * @var string $Activity
+     * @var string
      */
     protected $Activity = null;
 
     /**
-     * @var string $Details
+     * @var string
      */
     protected $Details = null;
 
     /**
-     * @var string $Location
+     * @var string
      */
     protected $Location = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -46,17 +43,19 @@ class ShipUpdates
      */
     public function getRowId()
     {
-      return $this->rowId;
+        return $this->rowId;
     }
 
     /**
      * @param string $rowId
+     *
      * @return \SmsaSDK\Methods\ShipUpdates
      */
     public function setRowId($rowId)
     {
-      $this->rowId = $rowId;
-      return $this;
+        $this->rowId = $rowId;
+
+        return $this;
     }
 
     /**
@@ -64,17 +63,19 @@ class ShipUpdates
      */
     public function getAwbNo()
     {
-      return $this->awbNo;
+        return $this->awbNo;
     }
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\ShipUpdates
      */
     public function setAwbNo($awbNo)
     {
-      $this->awbNo = $awbNo;
-      return $this;
+        $this->awbNo = $awbNo;
+
+        return $this;
     }
 
     /**
@@ -82,17 +83,19 @@ class ShipUpdates
      */
     public function getEvtDate()
     {
-      return $this->evtDate;
+        return $this->evtDate;
     }
 
     /**
      * @param string $evtDate
+     *
      * @return \SmsaSDK\Methods\ShipUpdates
      */
     public function setEvtDate($evtDate)
     {
-      $this->evtDate = $evtDate;
-      return $this;
+        $this->evtDate = $evtDate;
+
+        return $this;
     }
 
     /**
@@ -100,17 +103,19 @@ class ShipUpdates
      */
     public function getActivity()
     {
-      return $this->Activity;
+        return $this->Activity;
     }
 
     /**
      * @param string $Activity
+     *
      * @return \SmsaSDK\Methods\ShipUpdates
      */
     public function setActivity($Activity)
     {
-      $this->Activity = $Activity;
-      return $this;
+        $this->Activity = $Activity;
+
+        return $this;
     }
 
     /**
@@ -118,17 +123,19 @@ class ShipUpdates
      */
     public function getDetails()
     {
-      return $this->Details;
+        return $this->Details;
     }
 
     /**
      * @param string $Details
+     *
      * @return \SmsaSDK\Methods\ShipUpdates
      */
     public function setDetails($Details)
     {
-      $this->Details = $Details;
-      return $this;
+        $this->Details = $Details;
+
+        return $this;
     }
 
     /**
@@ -136,17 +143,18 @@ class ShipUpdates
      */
     public function getLocation()
     {
-      return $this->Location;
+        return $this->Location;
     }
 
     /**
      * @param string $Location
+     *
      * @return \SmsaSDK\Methods\ShipUpdates
      */
     public function setLocation($Location)
     {
-      $this->Location = $Location;
-      return $this;
-    }
+        $this->Location = $Location;
 
+        return $this;
+    }
 }

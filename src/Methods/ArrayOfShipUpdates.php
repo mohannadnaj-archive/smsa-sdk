@@ -4,16 +4,13 @@ namespace SmsaSDK\Methods;
 
 class ArrayOfShipUpdates implements \ArrayAccess, \Iterator, \Countable
 {
-
     /**
-     * @var ShipUpdates[] $ShipUpdates
+     * @var ShipUpdates[]
      */
     protected $ShipUpdates = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -21,128 +18,133 @@ class ArrayOfShipUpdates implements \ArrayAccess, \Iterator, \Countable
      */
     public function getShipUpdates()
     {
-      return $this->ShipUpdates;
+        return $this->ShipUpdates;
     }
 
     /**
      * @param ShipUpdates[] $ShipUpdates
+     *
      * @return \SmsaSDK\Methods\ArrayOfShipUpdates
      */
     public function setShipUpdates(array $ShipUpdates = null)
     {
-      $this->ShipUpdates = $ShipUpdates;
-      return $this;
+        $this->ShipUpdates = $ShipUpdates;
+
+        return $this;
     }
 
     /**
-     * ArrayAccess implementation
+     * ArrayAccess implementation.
      *
      * @param mixed $offset An offset to check for
-     * @return boolean true on success or false on failure
+     *
+     * @return bool true on success or false on failure
      */
     public function offsetExists($offset)
     {
-      return isset($this->ShipUpdates[$offset]);
+        return isset($this->ShipUpdates[$offset]);
     }
 
     /**
-     * ArrayAccess implementation
+     * ArrayAccess implementation.
      *
      * @param mixed $offset The offset to retrieve
+     *
      * @return ShipUpdates
      */
     public function offsetGet($offset)
     {
-      return $this->ShipUpdates[$offset];
+        return $this->ShipUpdates[$offset];
     }
 
     /**
-     * ArrayAccess implementation
+     * ArrayAccess implementation.
      *
-     * @param mixed $offset The offset to assign the value to
-     * @param ShipUpdates $value The value to set
+     * @param mixed       $offset The offset to assign the value to
+     * @param ShipUpdates $value  The value to set
+     *
      * @return void
      */
     public function offsetSet($offset, $value)
     {
-      if (!isset($offset)) {
-        $this->ShipUpdates[] = $value;
-      } else {
-        $this->ShipUpdates[$offset] = $value;
-      }
+        if (!isset($offset)) {
+            $this->ShipUpdates[] = $value;
+        } else {
+            $this->ShipUpdates[$offset] = $value;
+        }
     }
 
     /**
-     * ArrayAccess implementation
+     * ArrayAccess implementation.
      *
      * @param mixed $offset The offset to unset
+     *
      * @return void
      */
     public function offsetUnset($offset)
     {
-      unset($this->ShipUpdates[$offset]);
+        unset($this->ShipUpdates[$offset]);
     }
 
     /**
-     * Iterator implementation
+     * Iterator implementation.
      *
      * @return ShipUpdates Return the current element
      */
     public function current()
     {
-      return current($this->ShipUpdates);
+        return current($this->ShipUpdates);
     }
 
     /**
      * Iterator implementation
-     * Move forward to next element
+     * Move forward to next element.
      *
      * @return void
      */
     public function next()
     {
-      next($this->ShipUpdates);
+        next($this->ShipUpdates);
     }
 
     /**
-     * Iterator implementation
+     * Iterator implementation.
      *
      * @return string|null Return the key of the current element or null
      */
     public function key()
     {
-      return key($this->ShipUpdates);
+        return key($this->ShipUpdates);
     }
 
     /**
-     * Iterator implementation
+     * Iterator implementation.
      *
-     * @return boolean Return the validity of the current position
+     * @return bool Return the validity of the current position
      */
     public function valid()
     {
-      return $this->key() !== null;
+        return $this->key() !== null;
     }
 
     /**
      * Iterator implementation
-     * Rewind the Iterator to the first element
+     * Rewind the Iterator to the first element.
      *
      * @return void
      */
     public function rewind()
     {
-      reset($this->ShipUpdates);
+        reset($this->ShipUpdates);
     }
 
     /**
-     * Countable implementation
+     * Countable implementation.
      *
      * @return ShipUpdates Return count of elements
      */
     public function count()
     {
-      return count($this->ShipUpdates);
+        return count($this->ShipUpdates);
     }
-
 }

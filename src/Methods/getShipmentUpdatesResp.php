@@ -4,21 +4,18 @@ namespace SmsaSDK\Methods;
 
 class getShipmentUpdatesResp
 {
-
     /**
-     * @var string $RequestStatus
+     * @var string
      */
     protected $RequestStatus = null;
 
     /**
-     * @var ArrayOfShipUpdates $ShipUpdatesList
+     * @var ArrayOfShipUpdates
      */
     protected $ShipUpdatesList = null;
 
-    
     public function __construct()
     {
-    
     }
 
     /**
@@ -26,17 +23,19 @@ class getShipmentUpdatesResp
      */
     public function getRequestStatus()
     {
-      return $this->RequestStatus;
+        return $this->RequestStatus;
     }
 
     /**
      * @param string $RequestStatus
+     *
      * @return \SmsaSDK\Methods\getShipmentUpdatesResp
      */
     public function setRequestStatus($RequestStatus)
     {
-      $this->RequestStatus = $RequestStatus;
-      return $this;
+        $this->RequestStatus = $RequestStatus;
+
+        return $this;
     }
 
     /**
@@ -44,17 +43,18 @@ class getShipmentUpdatesResp
      */
     public function getShipUpdatesList()
     {
-      return $this->ShipUpdatesList;
+        return $this->ShipUpdatesList;
     }
 
     /**
      * @param ArrayOfShipUpdates $ShipUpdatesList
+     *
      * @return \SmsaSDK\Methods\getShipmentUpdatesResp
      */
     public function setShipUpdatesList($ShipUpdatesList)
     {
-      $this->ShipUpdatesList = $ShipUpdatesList;
-      return $this;
-    }
+        $this->ShipUpdatesList = $ShipUpdatesList;
 
+        return $this;
+    }
 }

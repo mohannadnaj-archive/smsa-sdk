@@ -4,14 +4,13 @@ namespace SmsaSDK\Methods;
 
 class getPDFSino
 {
-
     /**
-     * @var string $awbNo
+     * @var string
      */
     protected $awbNo = null;
 
     /**
-     * @var string $passKey
+     * @var string
      */
     protected $passKey = null;
 
@@ -21,8 +20,8 @@ class getPDFSino
      */
     public function __construct($awbNo = null, $passKey = null)
     {
-      $this->awbNo = $awbNo;
-      $this->passKey = $passKey;
+        $this->awbNo = $awbNo;
+        $this->passKey = $passKey;
     }
 
     /**
@@ -30,17 +29,19 @@ class getPDFSino
      */
     public function getAwbNo()
     {
-      return $this->awbNo;
+        return $this->awbNo;
     }
 
     /**
      * @param string $awbNo
+     *
      * @return \SmsaSDK\Methods\getPDFSino
      */
     public function setAwbNo($awbNo)
     {
-      $this->awbNo = $awbNo;
-      return $this;
+        $this->awbNo = $awbNo;
+
+        return $this;
     }
 
     /**
@@ -48,17 +49,18 @@ class getPDFSino
      */
     public function getPassKey()
     {
-      return $this->passKey;
+        return $this->passKey;
     }
 
     /**
      * @param string $passKey
+     *
      * @return \SmsaSDK\Methods\getPDFSino
      */
     public function setPassKey($passKey)
     {
-      $this->passKey = $passKey;
-      return $this;
-    }
+        $this->passKey = $passKey;
 
+        return $this;
+    }
 }

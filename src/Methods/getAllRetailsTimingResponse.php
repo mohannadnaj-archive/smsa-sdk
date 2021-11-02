@@ -4,9 +4,8 @@ namespace SmsaSDK\Methods;
 
 class getAllRetailsTimingResponse
 {
-
     /**
-     * @var getAllRetailsTimingResult $getAllRetailsTimingResult
+     * @var getAllRetailsTimingResult
      */
     protected $getAllRetailsTimingResult = null;
 
@@ -15,7 +14,7 @@ class getAllRetailsTimingResponse
      */
     public function __construct($getAllRetailsTimingResult = null)
     {
-      $this->getAllRetailsTimingResult = $getAllRetailsTimingResult;
+        $this->getAllRetailsTimingResult = $getAllRetailsTimingResult;
     }
 
     /**
@@ -23,17 +22,18 @@ class getAllRetailsTimingResponse
      */
     public function getGetAllRetailsTimingResult()
     {
-      return $this->getAllRetailsTimingResult;
+        return $this->getAllRetailsTimingResult;
     }
 
     /**
      * @param getAllRetailsTimingResult $getAllRetailsTimingResult
+     *
      * @return \SmsaSDK\Methods\getAllRetailsTimingResponse
      */
     public function setGetAllRetailsTimingResult($getAllRetailsTimingResult)
     {
-      $this->getAllRetailsTimingResult = $getAllRetailsTimingResult;
-      return $this;
-    }
+        $this->getAllRetailsTimingResult = $getAllRetailsTimingResult;
 
+        return $this;
+    }
 }
