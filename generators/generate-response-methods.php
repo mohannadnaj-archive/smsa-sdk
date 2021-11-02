@@ -23,27 +23,33 @@ file_put_contents(__DIR__.'/../src/MethodsRedirector.php', $trait);
 function build_method($method, $response)
 {
     $docBlock = "/**\n\r";
-    $rawMethod = "public static function $method(";
+    $rawMethod = $rawMethodCopy = "public static function $method(";
 
     $innerMethodTemplate = file_get_contents(__DIR__.'/stubs/MethodsRedirectorInnerMethod.php');
     $innerMethodTemplate = str_replace('%method', $method, $innerMethodTemplate);
 
     $innerMethod = '';
+    if ( class_exists($methodClass = 'SmsaSDK\\Methods\\'.$method))
+    {
+        $reflection = new ReflectionClass($methodClass);
+        $params = $reflection->getConstructor()->getParameters();
 
-    $reflection = new ReflectionClass('SmsaSDK\\Methods\\'.$method);
-    $params = $reflection->getConstructor()->getParameters();
-
-    foreach ($params as $param) {
-        $docBlock .= '* @param $'.$param->name."\n\r";
-        $rawMethod .= '$'.$param->name.' = null, ';
-        $innerMethod .= "if(!is_null(\$$param->name)) { \$arguments['$param->name'] = \$$param->name; } \n\r";
+        foreach ($params as $param) {
+            $docBlock .= '* @param $'.$param->name."\n\r";
+            $rawMethod .= '$'.$param->name.' = null, ';
+            $innerMethod .= "if(!is_null(\$$param->name)) { \$arguments['$param->name'] = \$$param->name; } \n\r";
+        }
     }
+
     $docBlock .= "* @return \SmsaSDK\Methods\\$response\n\r";
     $docBlock .= '*/';
 
     $innerMethodTemplate = str_replace('%innerMethod', $innerMethod, $innerMethodTemplate);
 
-    $rawMethod = substr($rawMethod, 0, -2); // remove the last comma and space ", "
+    if ( $rawMethod !== $rawMethodCopy)
+    {
+        $rawMethod = substr($rawMethod, 0, -2); // remove the last comma and space ", "
+    }
 
     $rawMethod .= ") { $innerMethodTemplate }";
 
