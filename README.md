@@ -1,4 +1,10 @@
-# SMSA Express SDK
+# ⚠️ SMSA Express SDK
+
+## ⚠️ Deprecation Notice:
+
+This package is deprecated and outdated. Do not use it.
+
+---
 
 Simple PHP package for integrating SMSA Web Services (SECOM).
 
