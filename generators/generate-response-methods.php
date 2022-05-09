@@ -58,7 +58,8 @@ function get_methods_and_responses()
     preg_match_all($responseRegex, $wsdlFile, $responseMethods);
 
     $responseMethods = array_filter(
-        $responseMethods[1], function ($method) {
+        $responseMethods[1],
+        function ($method) {
             return substr($method, 0, 4) != 'tns:';
         }
     );
@@ -70,7 +71,8 @@ function get_methods_and_responses()
     $responseMethodsCopy = [];
 
     array_walk(
-        $responseMethods, function ($method) use (&$responseMethodsCopy) {
+        $responseMethods,
+        function ($method) use (&$responseMethodsCopy) {
             $responseMethodsCopy[$method] = $method.'Response';
         }
     );

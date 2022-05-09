@@ -41,11 +41,11 @@ echo "Generating Methods Files\n\r";
 $generator->generate(
     new \Wsdl2PhpGenerator\Config(
         [
-        'inputFile'                      => $wsdlFile,
-        'outputDir'                      => $outputDir,
-        'namespaceName'                  => $nameSpace,
-        'soapClientClass'                => $soapClient,
-        'constructorParamsDefaultToNull' => true,
+            'inputFile'                      => $wsdlFile,
+            'outputDir'                      => $outputDir,
+            'namespaceName'                  => $nameSpace,
+            'soapClientClass'                => $soapClient,
+            'constructorParamsDefaultToNull' => true,
         ]
     )
 );
